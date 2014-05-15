@@ -1,0 +1,2472 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>105/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu May 15 19:29:05 CST 2014</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (799 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='cn.vko.core.db.util.TestDbExendUtil.testAbleMulipt()'><b>testAbleMulipt</b><br>Test class: cn.vko.core.db.util.TestDbExendUtil</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.util.TestDbExendUtil@3882764b</td></tr>
+<tr>
+<td title='cn.vko.core.db.util.TestDbExendUtil.testAbleSignleNoral()'><b>testAbleSignleNoral</b><br>Test class: cn.vko.core.db.util.TestDbExendUtil</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.util.TestDbExendUtil@3882764b</td></tr>
+<tr>
+<td title='cn.vko.core.db.util.TestDbExendUtil.testCount()'><b>testCount</b><br>Test class: cn.vko.core.db.util.TestDbExendUtil</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.util.TestDbExendUtil@3882764b</td></tr>
+<tr>
+<td title='cn.vko.core.db.util.TestDbExendUtil.testCountCnd()'><b>testCountCnd</b><br>Test class: cn.vko.core.db.util.TestDbExendUtil</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.util.TestDbExendUtil@3882764b</td></tr>
+<tr>
+<td title='cn.vko.core.db.util.TestDbExendUtil.testCountNull()'><b>testCountNull</b><br>Test class: cn.vko.core.db.util.TestDbExendUtil</td>
+<td><div><pre>cn.vko.core.common.exception.impl.ParamException: 类型不能为空
+	at cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+	at cn.vko.core.common.util.ExceptionUtil.checkNull(ExceptionUtil.java:132)
+	at cn.vko.core.db.util.EntityUtil.getTableName(EntityUtil.java:46)
+	at cn.vko.core.db.util.DbExtendUtil.count(DbExtendUtil.java:54)
+	at cn.vko.core.db.util.DbExtendUtil.count(DbExtendUtil.java:38)
+	at cn.vko.core.db.util.TestDbExendUtil.testCountNull(TestDbExendUtil.java:95)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:78)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2049101312", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2049101312'><pre>cn.vko.core.common.exception.impl.ParamException: 类型不能为空
+	at cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+	at cn.vko.core.common.util.ExceptionUtil.checkNull(ExceptionUtil.java:132)
+	at cn.vko.core.db.util.EntityUtil.getTableName(EntityUtil.java:46)
+	at cn.vko.core.db.util.DbExtendUtil.count(DbExtendUtil.java:54)
+	at cn.vko.core.db.util.DbExtendUtil.count(DbExtendUtil.java:38)
+	at cn.vko.core.db.util.TestDbExendUtil.testCountNull(TestDbExendUtil.java:95)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:758)
+	at org.testng.TestRunner.run(TestRunner.java:613)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1062)
+	at org.testng.TestNG.run(TestNG.java:974)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:78)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+</pre></div></td>
+<td>0</td>
+<td>cn.vko.core.db.util.TestDbExendUtil@3882764b</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestDbDao.testDeleteByIdNormal()'><b>testDeleteByIdNormal</b><br>Test class: cn.vko.core.db.dao.impl.TestDbDao</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestDbDao@19e3cd51</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestDbDao.testDeleteByIdNull()'><b>testDeleteByIdNull</b><br>Test class: cn.vko.core.db.dao.impl.TestDbDao</td>
+<td><div><pre>cn.vko.core.common.exception.impl.ParamException: clazz不能为空
+	at cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+	at cn.vko.core.common.util.ExceptionUtil.checkNull(ExceptionUtil.java:132)
+	at cn.vko.core.db.dao.impl.DbDao.delete(DbDao.java:163)
+	at cn.vko.core.db.dao.impl.TestDbDao.testDeleteByIdNull(TestDbDao.java:627)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:78)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace192714409", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace192714409'><pre>cn.vko.core.common.exception.impl.ParamException: clazz不能为空
+	at cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+	at cn.vko.core.common.util.ExceptionUtil.checkNull(ExceptionUtil.java:132)
+	at cn.vko.core.db.dao.impl.DbDao.delete(DbDao.java:163)
+	at cn.vko.core.db.dao.impl.TestDbDao.testDeleteByIdNull(TestDbDao.java:627)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:758)
+	at org.testng.TestRunner.run(TestRunner.java:613)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1062)
+	at org.testng.TestNG.run(TestNG.java:974)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:78)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+</pre></div></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestDbDao@19e3cd51</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestDbDao.testDeleteNormal()'><b>testDeleteNormal</b><br>Test class: cn.vko.core.db.dao.impl.TestDbDao</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestDbDao@19e3cd51</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestDbDao.testDeleteNull()'><b>testDeleteNull</b><br>Test class: cn.vko.core.db.dao.impl.TestDbDao</td>
+<td><div><pre>cn.vko.core.common.exception.impl.ParamException: 要删除的对象不能为空
+	at cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+	at cn.vko.core.common.util.ExceptionUtil.checkEmpty(ExceptionUtil.java:147)
+	at cn.vko.core.db.dao.impl.DbDao.delete(DbDao.java:154)
+	at cn.vko.core.db.dao.impl.TestDbDao.testDeleteNull(TestDbDao.java:622)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:78)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace223489506", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace223489506'><pre>cn.vko.core.common.exception.impl.ParamException: 要删除的对象不能为空
+	at cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+	at cn.vko.core.common.util.ExceptionUtil.checkEmpty(ExceptionUtil.java:147)
+	at cn.vko.core.db.dao.impl.DbDao.delete(DbDao.java:154)
+	at cn.vko.core.db.dao.impl.TestDbDao.testDeleteNull(TestDbDao.java:622)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:758)
+	at org.testng.TestRunner.run(TestRunner.java:613)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1062)
+	at org.testng.TestNG.run(TestNG.java:974)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:78)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+</pre></div></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestDbDao@19e3cd51</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestDbDao.testDeleteWithoutId()'><b>testDeleteWithoutId</b><br>Test class: cn.vko.core.db.dao.impl.TestDbDao</td>
+<td><div><pre>java.lang.RuntimeException: Don&apos;t know how to make fetch key cn.vko.core.db.mock.entity.MockEntityWithoutId:&apos;MockEntityWithoutId(id=0, name=测试)&apos;
+	at org.nutz.lang.Lang.makeThrow(Lang.java:96)
+	at org.nutz.dao.util.Pojos$Items.cndAuto(Pojos.java:145)
+	at org.nutz.dao.impl.EntityOperator.addDeleteSelfOnly(EntityOperator.java:145)
+	at org.nutz.dao.impl.NutDao.delete(NutDao.java:342)
+	at cn.vko.core.db.dao.impl.DbDao.delete(DbDao.java:158)
+	at cn.vko.core.db.dao.impl.TestDbDao.testDeleteWithoutId(TestDbDao.java:634)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:78)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace239228739", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace239228739'><pre>java.lang.RuntimeException: Don't know how to make fetch key cn.vko.core.db.mock.entity.MockEntityWithoutId:'MockEntityWithoutId(id=0, name=测试)'
+	at org.nutz.lang.Lang.makeThrow(Lang.java:96)
+	at org.nutz.dao.util.Pojos$Items.cndAuto(Pojos.java:145)
+	at org.nutz.dao.impl.EntityOperator.addDeleteSelfOnly(EntityOperator.java:145)
+	at org.nutz.dao.impl.NutDao.delete(NutDao.java:342)
+	at cn.vko.core.db.dao.impl.DbDao.delete(DbDao.java:158)
+	at cn.vko.core.db.dao.impl.TestDbDao.testDeleteWithoutId(TestDbDao.java:634)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:758)
+	at org.testng.TestRunner.run(TestRunner.java:613)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1062)
+	at org.testng.TestNG.run(TestNG.java:974)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:78)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+</pre></div></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestDbDao@19e3cd51</td></tr>
+<tr>
+<td title='cn.vko.core.db.util.TestDbExendUtil.testDisableStatus()'><b>testDisableStatus</b><br>Test class: cn.vko.core.db.util.TestDbExendUtil</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.util.TestDbExendUtil@3882764b</td></tr>
+<tr>
+<td title='cn.vko.core.db.util.TestEntityUtil.testEName2TName()'><b>testEName2TName</b><br>Test class: cn.vko.core.db.util.TestEntityUtil</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.util.TestEntityUtil@3abc8e1e</td></tr>
+<tr>
+<td title='cn.vko.core.db.util.TestDbExendUtil.testEnableStatus()'><b>testEnableStatus</b><br>Test class: cn.vko.core.db.util.TestDbExendUtil</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.util.TestDbExendUtil@3882764b</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestDbDao.testExcuteNull()'><b>testExcuteNull</b><br>Test class: cn.vko.core.db.dao.impl.TestDbDao</td>
+<td><div><pre>cn.vko.core.common.exception.impl.ParamException: sql对象不允许为空
+	at cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+	at cn.vko.core.common.util.ExceptionUtil.checkEmpty(ExceptionUtil.java:147)
+	at cn.vko.core.db.dao.impl.DbDao.excute(DbDao.java:169)
+	at cn.vko.core.db.dao.impl.TestDbDao.testExcuteNull(TestDbDao.java:663)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:78)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace628029189", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace628029189'><pre>cn.vko.core.common.exception.impl.ParamException: sql对象不允许为空
+	at cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+	at cn.vko.core.common.util.ExceptionUtil.checkEmpty(ExceptionUtil.java:147)
+	at cn.vko.core.db.dao.impl.DbDao.excute(DbDao.java:169)
+	at cn.vko.core.db.dao.impl.TestDbDao.testExcuteNull(TestDbDao.java:663)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:758)
+	at org.testng.TestRunner.run(TestRunner.java:613)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1062)
+	at org.testng.TestNG.run(TestNG.java:974)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:78)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+</pre></div></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestDbDao@19e3cd51</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestDbDao.testFetchByClassByCnd()'><b>testFetchByClassByCnd</b><br>Test class: cn.vko.core.db.dao.impl.TestDbDao</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestDbDao@19e3cd51</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestDbDao.testFetchByClassById()'><b>testFetchByClassById</b><br>Test class: cn.vko.core.db.dao.impl.TestDbDao</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestDbDao@19e3cd51</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestDbDao.testFetchByClassByNotExistsId()'><b>testFetchByClassByNotExistsId</b><br>Test class: cn.vko.core.db.dao.impl.TestDbDao</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestDbDao@19e3cd51</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestDbDao.testFetchByClassNull()'><b>testFetchByClassNull</b><br>Test class: cn.vko.core.db.dao.impl.TestDbDao</td>
+<td><div><pre>cn.vko.core.common.exception.impl.ParamException: class不能为空
+	at cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+	at cn.vko.core.common.util.ExceptionUtil.checkNull(ExceptionUtil.java:132)
+	at cn.vko.core.db.dao.impl.DbDao.fetch(DbDao.java:215)
+	at cn.vko.core.db.dao.impl.TestDbDao.testFetchByClassNull(TestDbDao.java:509)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:78)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1789767313", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1789767313'><pre>cn.vko.core.common.exception.impl.ParamException: class不能为空
+	at cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+	at cn.vko.core.common.util.ExceptionUtil.checkNull(ExceptionUtil.java:132)
+	at cn.vko.core.db.dao.impl.DbDao.fetch(DbDao.java:215)
+	at cn.vko.core.db.dao.impl.TestDbDao.testFetchByClassNull(TestDbDao.java:509)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:758)
+	at org.testng.TestRunner.run(TestRunner.java:613)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1062)
+	at org.testng.TestNG.run(TestNG.java:974)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:78)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+</pre></div></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestDbDao@19e3cd51</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestDbDao.testFetchByCndNotHasId()'><b>testFetchByCndNotHasId</b><br>Test class: cn.vko.core.db.dao.impl.TestDbDao</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestDbDao@19e3cd51</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestDbDao.testFetchByIdNotHasId()'><b>testFetchByIdNotHasId</b><br>Test class: cn.vko.core.db.dao.impl.TestDbDao</td>
+<td><div><pre>org.nutz.dao.DaoException: Need @Id for class cn.vko.core.db.mock.entity.MockEntityWithoutId
+	at org.nutz.dao.impl.NutDao.fetch(NutDao.java:456)
+	at cn.vko.core.db.dao.impl.DbDao.fetch(DbDao.java:209)
+	at cn.vko.core.db.dao.impl.TestDbDao.testFetchByIdNotHasId(TestDbDao.java:521)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:78)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1380741586", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1380741586'><pre>org.nutz.dao.DaoException: Need @Id for class cn.vko.core.db.mock.entity.MockEntityWithoutId
+	at org.nutz.dao.impl.NutDao.fetch(NutDao.java:456)
+	at cn.vko.core.db.dao.impl.DbDao.fetch(DbDao.java:209)
+	at cn.vko.core.db.dao.impl.TestDbDao.testFetchByIdNotHasId(TestDbDao.java:521)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:758)
+	at org.testng.TestRunner.run(TestRunner.java:613)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1062)
+	at org.testng.TestNG.run(TestNG.java:974)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:78)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+</pre></div></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestDbDao@19e3cd51</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestDbDao.testFetchBySql()'><b>testFetchBySql</b><br>Test class: cn.vko.core.db.dao.impl.TestDbDao</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestDbDao@19e3cd51</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestDbDao.testFetchBySqlNotExists()'><b>testFetchBySqlNotExists</b><br>Test class: cn.vko.core.db.dao.impl.TestDbDao</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestDbDao@19e3cd51</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestDbDao.testFetchBySqlNull()'><b>testFetchBySqlNull</b><br>Test class: cn.vko.core.db.dao.impl.TestDbDao</td>
+<td><div><pre>cn.vko.core.common.exception.impl.ParamException: sql不能为空
+	at cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+	at cn.vko.core.common.util.ExceptionUtil.checkEmpty(ExceptionUtil.java:147)
+	at cn.vko.core.db.dao.impl.DbDao.fetch(DbDao.java:237)
+	at cn.vko.core.db.dao.impl.TestDbDao.testFetchBySqlNull(TestDbDao.java:595)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:78)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace758742620", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace758742620'><pre>cn.vko.core.common.exception.impl.ParamException: sql不能为空
+	at cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+	at cn.vko.core.common.util.ExceptionUtil.checkEmpty(ExceptionUtil.java:147)
+	at cn.vko.core.db.dao.impl.DbDao.fetch(DbDao.java:237)
+	at cn.vko.core.db.dao.impl.TestDbDao.testFetchBySqlNull(TestDbDao.java:595)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:758)
+	at org.testng.TestRunner.run(TestRunner.java:613)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1062)
+	at org.testng.TestNG.run(TestNG.java:974)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:78)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+</pre></div></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestDbDao@19e3cd51</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestDbDao.testFetchByTableNameByCnd()'><b>testFetchByTableNameByCnd</b><br>Test class: cn.vko.core.db.dao.impl.TestDbDao</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestDbDao@19e3cd51</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestDbDao.testFetchByTableNameById()'><b>testFetchByTableNameById</b><br>Test class: cn.vko.core.db.dao.impl.TestDbDao</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestDbDao@19e3cd51</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestDbDao.testFetchByTableNameByNotExistsId()'><b>testFetchByTableNameByNotExistsId</b><br>Test class: cn.vko.core.db.dao.impl.TestDbDao</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestDbDao@19e3cd51</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestDbDao.testFetchByTableNameNull()'><b>testFetchByTableNameNull</b><br>Test class: cn.vko.core.db.dao.impl.TestDbDao</td>
+<td><div><pre>cn.vko.core.common.exception.impl.ParamException: tableName不能为空
+	at cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+	at cn.vko.core.common.util.ExceptionUtil.checkEmpty(ExceptionUtil.java:147)
+	at cn.vko.core.db.dao.impl.DbDao.fetch(DbDao.java:231)
+	at cn.vko.core.db.dao.impl.TestDbDao.testFetchByTableNameNull(TestDbDao.java:515)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:78)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1629818866", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1629818866'><pre>cn.vko.core.common.exception.impl.ParamException: tableName不能为空
+	at cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+	at cn.vko.core.common.util.ExceptionUtil.checkEmpty(ExceptionUtil.java:147)
+	at cn.vko.core.db.dao.impl.DbDao.fetch(DbDao.java:231)
+	at cn.vko.core.db.dao.impl.TestDbDao.testFetchByTableNameNull(TestDbDao.java:515)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:758)
+	at org.testng.TestRunner.run(TestRunner.java:613)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1062)
+	at org.testng.TestNG.run(TestNG.java:974)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:78)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+</pre></div></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestDbDao@19e3cd51</td></tr>
+<tr>
+<td title='cn.vko.core.db.util.TestDbSqlUtil.testFetchEntity()'><b>testFetchEntity</b><br>Test class: cn.vko.core.db.util.TestDbSqlUtil</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.util.TestDbSqlUtil@518f5824</td></tr>
+<tr>
+<td title='cn.vko.core.db.util.TestDbSqlUtil.testFetchIntIll()'><b>testFetchIntIll</b><br>Test class: cn.vko.core.db.util.TestDbSqlUtil</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.util.TestDbSqlUtil@518f5824</td></tr>
+<tr>
+<td title='cn.vko.core.db.util.TestDbSqlUtil.testFetchLongIll()'><b>testFetchLongIll</b><br>Test class: cn.vko.core.db.util.TestDbSqlUtil</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.util.TestDbSqlUtil@518f5824</td></tr>
+<tr>
+<td title='cn.vko.core.db.util.TestDbSqlUtil.testFetchSignleNormal()'><b>testFetchSignleNormal</b><br>Test class: cn.vko.core.db.util.TestDbSqlUtil</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.util.TestDbSqlUtil@518f5824</td></tr>
+<tr>
+<td title='cn.vko.core.db.util.TestDbSqlUtil.testFetchStringIll()'><b>testFetchStringIll</b><br>Test class: cn.vko.core.db.util.TestDbSqlUtil</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.util.TestDbSqlUtil@518f5824</td></tr>
+<tr>
+<td title='cn.vko.core.db.util.TestRecordUtil.testGetBoolean()'><b>testGetBoolean</b><br>Test class: cn.vko.core.db.util.TestRecordUtil</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.util.TestRecordUtil@2f833eca</td></tr>
+<tr>
+<td title='cn.vko.core.db.util.TestRecordUtil.testGetBooleanIll()'><b>testGetBooleanIll</b><br>Test class: cn.vko.core.db.util.TestRecordUtil</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.util.TestRecordUtil@2f833eca</td></tr>
+<tr>
+<td title='cn.vko.core.db.util.TestRecordUtil.testGetDateIll()'><b>testGetDateIll</b><br>Test class: cn.vko.core.db.util.TestRecordUtil</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.util.TestRecordUtil@2f833eca</td></tr>
+<tr>
+<td title='cn.vko.core.db.util.TestRecordUtil.testGetDouble()'><b>testGetDouble</b><br>Test class: cn.vko.core.db.util.TestRecordUtil</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.util.TestRecordUtil@2f833eca</td></tr>
+<tr>
+<td title='cn.vko.core.db.util.TestRecordUtil.testGetDoubleIll()'><b>testGetDoubleIll</b><br>Test class: cn.vko.core.db.util.TestRecordUtil</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.util.TestRecordUtil@2f833eca</td></tr>
+<tr>
+<td title='cn.vko.core.db.util.TestRecordUtil.testGetLong()'><b>testGetLong</b><br>Test class: cn.vko.core.db.util.TestRecordUtil</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.util.TestRecordUtil@2f833eca</td></tr>
+<tr>
+<td title='cn.vko.core.db.util.TestRecordUtil.testGetLongIll()'><b>testGetLongIll</b><br>Test class: cn.vko.core.db.util.TestRecordUtil</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.util.TestRecordUtil@2f833eca</td></tr>
+<tr>
+<td title='cn.vko.core.db.util.TestEntityUtil.testGetTableName()'><b>testGetTableName</b><br>Test class: cn.vko.core.db.util.TestEntityUtil</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.util.TestEntityUtil@3abc8e1e</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestDbDao.testInsertArray()'><b>testInsertArray</b><br>Test class: cn.vko.core.db.dao.impl.TestDbDao</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestDbDao@19e3cd51</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestOperateDbDao.testInsertArray()'><b>testInsertArray</b><br>Test class: cn.vko.core.db.dao.impl.TestOperateDbDao</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestOperateDbDao@311671b2</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestDbDao.testInsertArrayHasNull()'><b>testInsertArrayHasNull</b><br>Test class: cn.vko.core.db.dao.impl.TestDbDao</td>
+<td><div><pre>java.lang.NullPointerException
+	at cn.vko.core.db.dao.impl.DbDao$1.invoke(DbDao.java:79)
+	at org.nutz.lang.Lang.each(Lang.java:1362)
+	at org.nutz.lang.Lang.each(Lang.java:1326)
+	at cn.vko.core.db.dao.impl.DbDao.insert(DbDao.java:71)
+	at cn.vko.core.db.dao.impl.TestDbDao.testInsertArrayHasNull(TestDbDao.java:246)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:78)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1519652738", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1519652738'><pre>java.lang.NullPointerException
+	at cn.vko.core.db.dao.impl.DbDao$1.invoke(DbDao.java:79)
+	at org.nutz.lang.Lang.each(Lang.java:1362)
+	at org.nutz.lang.Lang.each(Lang.java:1326)
+	at cn.vko.core.db.dao.impl.DbDao.insert(DbDao.java:71)
+	at cn.vko.core.db.dao.impl.TestDbDao.testInsertArrayHasNull(TestDbDao.java:246)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:758)
+	at org.testng.TestRunner.run(TestRunner.java:613)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1062)
+	at org.testng.TestNG.run(TestNG.java:974)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:78)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+</pre></div></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestDbDao@19e3cd51</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestDbDao.testInsertArrayNotSame()'><b>testInsertArrayNotSame</b><br>Test class: cn.vko.core.db.dao.impl.TestDbDao</td>
+<td><div><pre>java.lang.RuntimeException: Invalid operating object &apos;cn.vko.core.db.mock.entity.MockEntityWithoutAutoId&apos; for field &apos;&apos;id&apos;(cn.vko.core.db.mock.entity.MockEntityWithAutoId)&apos;
+	at org.nutz.lang.Lang.makeThrow(Lang.java:96)
+	at org.nutz.dao.impl.entity.macro.SqlFieldMacro.setOperatingObject(SqlFieldMacro.java:40)
+	at org.nutz.dao.impl.EntityOperator.addInsert(EntityOperator.java:169)
+	at org.nutz.dao.impl.NutDao$1.invoke(NutDao.java:130)
+	at org.nutz.lang.Lang.each(Lang.java:1362)
+	at org.nutz.dao.impl.NutDao.insert(NutDao.java:128)
+	at cn.vko.core.db.dao.impl.DbDao.insert(DbDao.java:99)
+	at cn.vko.core.db.dao.impl.TestDbDao.testInsertArrayNotSame(TestDbDao.java:219)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:78)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace780553795", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace780553795'><pre>java.lang.RuntimeException: Invalid operating object 'cn.vko.core.db.mock.entity.MockEntityWithoutAutoId' for field ''id'(cn.vko.core.db.mock.entity.MockEntityWithAutoId)'
+	at org.nutz.lang.Lang.makeThrow(Lang.java:96)
+	at org.nutz.dao.impl.entity.macro.SqlFieldMacro.setOperatingObject(SqlFieldMacro.java:40)
+	at org.nutz.dao.impl.EntityOperator.addInsert(EntityOperator.java:169)
+	at org.nutz.dao.impl.NutDao$1.invoke(NutDao.java:130)
+	at org.nutz.lang.Lang.each(Lang.java:1362)
+	at org.nutz.dao.impl.NutDao.insert(NutDao.java:128)
+	at cn.vko.core.db.dao.impl.DbDao.insert(DbDao.java:99)
+	at cn.vko.core.db.dao.impl.TestDbDao.testInsertArrayNotSame(TestDbDao.java:219)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:758)
+	at org.testng.TestRunner.run(TestRunner.java:613)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1062)
+	at org.testng.TestNG.run(TestNG.java:974)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:78)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+</pre></div></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestDbDao@19e3cd51</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestDbDao.testInsertArrayNull()'><b>testInsertArrayNull</b><br>Test class: cn.vko.core.db.dao.impl.TestDbDao</td>
+<td><div><pre>cn.vko.core.common.exception.impl.ParamException: 插入的数据不为空
+	at cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+	at cn.vko.core.common.util.ExceptionUtil.checkEmpty(ExceptionUtil.java:147)
+	at cn.vko.core.db.dao.impl.DbDao.insert(DbDao.java:69)
+	at cn.vko.core.db.dao.impl.TestDbDao.testInsertArrayNull(TestDbDao.java:99)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:78)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1548452562", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1548452562'><pre>cn.vko.core.common.exception.impl.ParamException: 插入的数据不为空
+	at cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+	at cn.vko.core.common.util.ExceptionUtil.checkEmpty(ExceptionUtil.java:147)
+	at cn.vko.core.db.dao.impl.DbDao.insert(DbDao.java:69)
+	at cn.vko.core.db.dao.impl.TestDbDao.testInsertArrayNull(TestDbDao.java:99)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:758)
+	at org.testng.TestRunner.run(TestRunner.java:613)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1062)
+	at org.testng.TestNG.run(TestNG.java:974)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:78)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+</pre></div></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestDbDao@19e3cd51</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestOperateDbDao.testInsertCollection()'><b>testInsertCollection</b><br>Test class: cn.vko.core.db.dao.impl.TestOperateDbDao</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestOperateDbDao@311671b2</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestDbDao.testInsertCollectionNull()'><b>testInsertCollectionNull</b><br>Test class: cn.vko.core.db.dao.impl.TestDbDao</td>
+<td><div><pre>cn.vko.core.common.exception.impl.ParamException: 插入的数据不为空
+	at cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+	at cn.vko.core.common.util.ExceptionUtil.checkEmpty(ExceptionUtil.java:147)
+	at cn.vko.core.db.dao.impl.DbDao.insert(DbDao.java:69)
+	at cn.vko.core.db.dao.impl.TestDbDao.testInsertCollectionNull(TestDbDao.java:104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:78)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1635375188", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1635375188'><pre>cn.vko.core.common.exception.impl.ParamException: 插入的数据不为空
+	at cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+	at cn.vko.core.common.util.ExceptionUtil.checkEmpty(ExceptionUtil.java:147)
+	at cn.vko.core.db.dao.impl.DbDao.insert(DbDao.java:69)
+	at cn.vko.core.db.dao.impl.TestDbDao.testInsertCollectionNull(TestDbDao.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:758)
+	at org.testng.TestRunner.run(TestRunner.java:613)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1062)
+	at org.testng.TestNG.run(TestNG.java:974)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:78)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+</pre></div></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestDbDao@19e3cd51</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestDbDao.testInsertList()'><b>testInsertList</b><br>Test class: cn.vko.core.db.dao.impl.TestDbDao</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestDbDao@19e3cd51</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestDbDao.testInsertListHasNull()'><b>testInsertListHasNull</b><br>Test class: cn.vko.core.db.dao.impl.TestDbDao</td>
+<td><div><pre>java.lang.NullPointerException
+	at cn.vko.core.db.dao.impl.DbDao$1.invoke(DbDao.java:79)
+	at org.nutz.lang.Lang.each(Lang.java:1373)
+	at org.nutz.lang.Lang.each(Lang.java:1326)
+	at cn.vko.core.db.dao.impl.DbDao.insert(DbDao.java:71)
+	at cn.vko.core.db.dao.impl.TestDbDao.testInsertListHasNull(TestDbDao.java:259)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:78)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace29494967", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace29494967'><pre>java.lang.NullPointerException
+	at cn.vko.core.db.dao.impl.DbDao$1.invoke(DbDao.java:79)
+	at org.nutz.lang.Lang.each(Lang.java:1373)
+	at org.nutz.lang.Lang.each(Lang.java:1326)
+	at cn.vko.core.db.dao.impl.DbDao.insert(DbDao.java:71)
+	at cn.vko.core.db.dao.impl.TestDbDao.testInsertListHasNull(TestDbDao.java:259)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:758)
+	at org.testng.TestRunner.run(TestRunner.java:613)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1062)
+	at org.testng.TestNG.run(TestNG.java:974)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:78)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+</pre></div></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestDbDao@19e3cd51</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestDbDao.testInsertMap()'><b>testInsertMap</b><br>Test class: cn.vko.core.db.dao.impl.TestDbDao</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestDbDao@19e3cd51</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestOperateDbDao.testInsertMap()'><b>testInsertMap</b><br>Test class: cn.vko.core.db.dao.impl.TestOperateDbDao</td>
+<td><div><pre>cn.vko.core.common.exception.impl.ParamException: 插入的数据不为空
+	at cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+	at cn.vko.core.common.util.ExceptionUtil.checkEmpty(ExceptionUtil.java:147)
+	at cn.vko.core.db.dao.impl.OperateDbDao.insert(OperateDbDao.java:65)
+	at cn.vko.core.db.dao.impl.TestOperateDbDao.testInsertMap(TestOperateDbDao.java:133)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:78)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace255194190", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace255194190'><pre>cn.vko.core.common.exception.impl.ParamException: 插入的数据不为空
+	at cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+	at cn.vko.core.common.util.ExceptionUtil.checkEmpty(ExceptionUtil.java:147)
+	at cn.vko.core.db.dao.impl.OperateDbDao.insert(OperateDbDao.java:65)
+	at cn.vko.core.db.dao.impl.TestOperateDbDao.testInsertMap(TestOperateDbDao.java:133)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:758)
+	at org.testng.TestRunner.run(TestRunner.java:613)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1062)
+	at org.testng.TestNG.run(TestNG.java:974)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:78)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+</pre></div></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestOperateDbDao@311671b2</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestDbDao.testInsertMapNull()'><b>testInsertMapNull</b><br>Test class: cn.vko.core.db.dao.impl.TestDbDao</td>
+<td><div><pre>cn.vko.core.common.exception.impl.ParamException: 插入的数据不为空
+	at cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+	at cn.vko.core.common.util.ExceptionUtil.checkEmpty(ExceptionUtil.java:147)
+	at cn.vko.core.db.dao.impl.DbDao.insert(DbDao.java:69)
+	at cn.vko.core.db.dao.impl.TestDbDao.testInsertMapNull(TestDbDao.java:109)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:78)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace864950435", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace864950435'><pre>cn.vko.core.common.exception.impl.ParamException: 插入的数据不为空
+	at cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+	at cn.vko.core.common.util.ExceptionUtil.checkEmpty(ExceptionUtil.java:147)
+	at cn.vko.core.db.dao.impl.DbDao.insert(DbDao.java:69)
+	at cn.vko.core.db.dao.impl.TestDbDao.testInsertMapNull(TestDbDao.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:758)
+	at org.testng.TestRunner.run(TestRunner.java:613)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1062)
+	at org.testng.TestNG.run(TestNG.java:974)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:78)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+</pre></div></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestDbDao@19e3cd51</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestDbDao.testInsertNull()'><b>testInsertNull</b><br>Test class: cn.vko.core.db.dao.impl.TestDbDao</td>
+<td><div><pre>cn.vko.core.common.exception.impl.ParamException: 插入的数据不为空
+	at cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+	at cn.vko.core.common.util.ExceptionUtil.checkEmpty(ExceptionUtil.java:147)
+	at cn.vko.core.db.dao.impl.DbDao.insert(DbDao.java:69)
+	at cn.vko.core.db.dao.impl.TestDbDao.testInsertNull(TestDbDao.java:94)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:78)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace905154502", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace905154502'><pre>cn.vko.core.common.exception.impl.ParamException: 插入的数据不为空
+	at cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+	at cn.vko.core.common.util.ExceptionUtil.checkEmpty(ExceptionUtil.java:147)
+	at cn.vko.core.db.dao.impl.DbDao.insert(DbDao.java:69)
+	at cn.vko.core.db.dao.impl.TestDbDao.testInsertNull(TestDbDao.java:94)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:758)
+	at org.testng.TestRunner.run(TestRunner.java:613)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1062)
+	at org.testng.TestNG.run(TestNG.java:974)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:78)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+</pre></div></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestDbDao@19e3cd51</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestOperateDbDao.testInsertNull()'><b>testInsertNull</b><br>Test class: cn.vko.core.db.dao.impl.TestOperateDbDao</td>
+<td><div><pre>cn.vko.core.common.exception.impl.ParamException: 插入的数据不为空
+	at cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+	at cn.vko.core.common.util.ExceptionUtil.checkEmpty(ExceptionUtil.java:147)
+	at cn.vko.core.db.dao.impl.OperateDbDao.insert(OperateDbDao.java:65)
+	at cn.vko.core.db.dao.impl.TestOperateDbDao.testInsertNull(TestOperateDbDao.java:79)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:78)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace523908271", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace523908271'><pre>cn.vko.core.common.exception.impl.ParamException: 插入的数据不为空
+	at cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+	at cn.vko.core.common.util.ExceptionUtil.checkEmpty(ExceptionUtil.java:147)
+	at cn.vko.core.db.dao.impl.OperateDbDao.insert(OperateDbDao.java:65)
+	at cn.vko.core.db.dao.impl.TestOperateDbDao.testInsertNull(TestOperateDbDao.java:79)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:758)
+	at org.testng.TestRunner.run(TestRunner.java:613)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1062)
+	at org.testng.TestNG.run(TestNG.java:974)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:78)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+</pre></div></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestOperateDbDao@311671b2</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestOperateDbDao.testInsertSignle()'><b>testInsertSignle</b><br>Test class: cn.vko.core.db.dao.impl.TestOperateDbDao</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestOperateDbDao@311671b2</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestDbDao.testInsertSingleWithAutoIdHasId()'><b>testInsertSingleWithAutoIdHasId</b><br>Test class: cn.vko.core.db.dao.impl.TestDbDao</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestDbDao@19e3cd51</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestDbDao.testInsertSingleWithAutoIdNotHasId()'><b>testInsertSingleWithAutoIdNotHasId</b><br>Test class: cn.vko.core.db.dao.impl.TestDbDao</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestDbDao@19e3cd51</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestDbDao.testInsertSingleWithNotAutoIdNotHasId()'><b>testInsertSingleWithNotAutoIdNotHasId</b><br>Test class: cn.vko.core.db.dao.impl.TestDbDao</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestDbDao@19e3cd51</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestDbDao.testInsertSingleWithoutIdNotHasId()'><b>testInsertSingleWithoutIdNotHasId</b><br>Test class: cn.vko.core.db.dao.impl.TestDbDao</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestDbDao@19e3cd51</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestDbDao.testInsertTableByClass()'><b>testInsertTableByClass</b><br>Test class: cn.vko.core.db.dao.impl.TestDbDao</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestDbDao@19e3cd51</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestDbDao.testInsertTableByClassChainNull()'><b>testInsertTableByClassChainNull</b><br>Test class: cn.vko.core.db.dao.impl.TestDbDao</td>
+<td><div><pre>cn.vko.core.common.exception.impl.ParamException: chain不能为空
+	at cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+	at cn.vko.core.common.util.ExceptionUtil.checkNull(ExceptionUtil.java:132)
+	at cn.vko.core.db.dao.impl.DbDao.insert(DbDao.java:113)
+	at cn.vko.core.db.dao.impl.TestDbDao.testInsertTableByClassChainNull(TestDbDao.java:285)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:78)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2008817593", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2008817593'><pre>cn.vko.core.common.exception.impl.ParamException: chain不能为空
+	at cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+	at cn.vko.core.common.util.ExceptionUtil.checkNull(ExceptionUtil.java:132)
+	at cn.vko.core.db.dao.impl.DbDao.insert(DbDao.java:113)
+	at cn.vko.core.db.dao.impl.TestDbDao.testInsertTableByClassChainNull(TestDbDao.java:285)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:758)
+	at org.testng.TestRunner.run(TestRunner.java:613)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1062)
+	at org.testng.TestNG.run(TestNG.java:974)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:78)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+</pre></div></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestDbDao@19e3cd51</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestDbDao.testInsertTableByClassClassNull()'><b>testInsertTableByClassClassNull</b><br>Test class: cn.vko.core.db.dao.impl.TestDbDao</td>
+<td><div><pre>cn.vko.core.common.exception.impl.ParamException: class不能为空
+	at cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+	at cn.vko.core.common.util.ExceptionUtil.checkNull(ExceptionUtil.java:132)
+	at cn.vko.core.db.dao.impl.DbDao.insert(DbDao.java:112)
+	at cn.vko.core.db.dao.impl.TestDbDao.testInsertTableByClassClassNull(TestDbDao.java:280)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:78)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1606871064", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1606871064'><pre>cn.vko.core.common.exception.impl.ParamException: class不能为空
+	at cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+	at cn.vko.core.common.util.ExceptionUtil.checkNull(ExceptionUtil.java:132)
+	at cn.vko.core.db.dao.impl.DbDao.insert(DbDao.java:112)
+	at cn.vko.core.db.dao.impl.TestDbDao.testInsertTableByClassClassNull(TestDbDao.java:280)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:758)
+	at org.testng.TestRunner.run(TestRunner.java:613)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1062)
+	at org.testng.TestNG.run(TestNG.java:974)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:78)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+</pre></div></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestDbDao@19e3cd51</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestDbDao.testInsertTableByTableName()'><b>testInsertTableByTableName</b><br>Test class: cn.vko.core.db.dao.impl.TestDbDao</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestDbDao@19e3cd51</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestDbDao.testInsertTableByTableNameChainNull()'><b>testInsertTableByTableNameChainNull</b><br>Test class: cn.vko.core.db.dao.impl.TestDbDao</td>
+<td><div><pre>cn.vko.core.common.exception.impl.ParamException: chain不能为空
+	at cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+	at cn.vko.core.common.util.ExceptionUtil.checkNull(ExceptionUtil.java:132)
+	at cn.vko.core.db.dao.impl.DbDao.insert(DbDao.java:106)
+	at cn.vko.core.db.dao.impl.TestDbDao.testInsertTableByTableNameChainNull(TestDbDao.java:302)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:78)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1266620481", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1266620481'><pre>cn.vko.core.common.exception.impl.ParamException: chain不能为空
+	at cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+	at cn.vko.core.common.util.ExceptionUtil.checkNull(ExceptionUtil.java:132)
+	at cn.vko.core.db.dao.impl.DbDao.insert(DbDao.java:106)
+	at cn.vko.core.db.dao.impl.TestDbDao.testInsertTableByTableNameChainNull(TestDbDao.java:302)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:758)
+	at org.testng.TestRunner.run(TestRunner.java:613)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1062)
+	at org.testng.TestNG.run(TestNG.java:974)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:78)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+</pre></div></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestDbDao@19e3cd51</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestDbDao.testInsertTableByTableNameTabelNameNull()'><b>testInsertTableByTableNameTabelNameNull</b><br>Test class: cn.vko.core.db.dao.impl.TestDbDao</td>
+<td><div><pre>cn.vko.core.common.exception.impl.ParamException: tableName不能为空
+	at cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+	at cn.vko.core.common.util.ExceptionUtil.checkEmpty(ExceptionUtil.java:147)
+	at cn.vko.core.db.dao.impl.DbDao.insert(DbDao.java:105)
+	at cn.vko.core.db.dao.impl.TestDbDao.testInsertTableByTableNameTabelNameNull(TestDbDao.java:297)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:78)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace85031456", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace85031456'><pre>cn.vko.core.common.exception.impl.ParamException: tableName不能为空
+	at cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+	at cn.vko.core.common.util.ExceptionUtil.checkEmpty(ExceptionUtil.java:147)
+	at cn.vko.core.db.dao.impl.DbDao.insert(DbDao.java:105)
+	at cn.vko.core.db.dao.impl.TestDbDao.testInsertTableByTableNameTabelNameNull(TestDbDao.java:297)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:758)
+	at org.testng.TestRunner.run(TestRunner.java:613)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1062)
+	at org.testng.TestNG.run(TestNG.java:974)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:78)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+</pre></div></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestDbDao@19e3cd51</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestDbDao.testInsertWithOutAutoHasId()'><b>testInsertWithOutAutoHasId</b><br>Test class: cn.vko.core.db.dao.impl.TestDbDao</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestDbDao@19e3cd51</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestOperateDbDao.testInsertWithUserId()'><b>testInsertWithUserId</b><br>Test class: cn.vko.core.db.dao.impl.TestOperateDbDao</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestOperateDbDao@311671b2</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestDbDao.testQueryByClass()'><b>testQueryByClass</b><br>Test class: cn.vko.core.db.dao.impl.TestDbDao</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestDbDao@19e3cd51</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestDbDao.testQueryByClassClazzNull()'><b>testQueryByClassClazzNull</b><br>Test class: cn.vko.core.db.dao.impl.TestDbDao</td>
+<td><div><pre>cn.vko.core.common.exception.impl.ParamException: 查询的类型不为空
+	at cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+	at cn.vko.core.common.util.ExceptionUtil.checkNull(ExceptionUtil.java:132)
+	at cn.vko.core.db.dao.impl.DbDao.query(DbDao.java:176)
+	at cn.vko.core.db.dao.impl.TestDbDao.testQueryByClassClazzNull(TestDbDao.java:669)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:78)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1946166549", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1946166549'><pre>cn.vko.core.common.exception.impl.ParamException: 查询的类型不为空
+	at cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+	at cn.vko.core.common.util.ExceptionUtil.checkNull(ExceptionUtil.java:132)
+	at cn.vko.core.db.dao.impl.DbDao.query(DbDao.java:176)
+	at cn.vko.core.db.dao.impl.TestDbDao.testQueryByClassClazzNull(TestDbDao.java:669)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:758)
+	at org.testng.TestRunner.run(TestRunner.java:613)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1062)
+	at org.testng.TestNG.run(TestNG.java:974)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:78)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+</pre></div></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestDbDao@19e3cd51</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestDbDao.testQueryByClassCnd()'><b>testQueryByClassCnd</b><br>Test class: cn.vko.core.db.dao.impl.TestDbDao</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestDbDao@19e3cd51</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestDbDao.testQueryByClassCndAndPagerNull()'><b>testQueryByClassCndAndPagerNull</b><br>Test class: cn.vko.core.db.dao.impl.TestDbDao</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestDbDao@19e3cd51</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestDbDao.testQueryBySql()'><b>testQueryBySql</b><br>Test class: cn.vko.core.db.dao.impl.TestDbDao</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestDbDao@19e3cd51</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestDbDao.testQueryBySqlCnd()'><b>testQueryBySqlCnd</b><br>Test class: cn.vko.core.db.dao.impl.TestDbDao</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestDbDao@19e3cd51</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestDbDao.testQueryBySqlCndAndPagerNull()'><b>testQueryBySqlCndAndPagerNull</b><br>Test class: cn.vko.core.db.dao.impl.TestDbDao</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestDbDao@19e3cd51</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestDbDao.testQueryBySqlSqlNull()'><b>testQueryBySqlSqlNull</b><br>Test class: cn.vko.core.db.dao.impl.TestDbDao</td>
+<td><div><pre>cn.vko.core.common.exception.impl.ParamException: sql对象不允许为空
+	at cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+	at cn.vko.core.common.util.ExceptionUtil.checkNull(ExceptionUtil.java:132)
+	at cn.vko.core.db.dao.impl.DbDao.query(DbDao.java:191)
+	at cn.vko.core.db.dao.impl.TestDbDao.testQueryBySqlSqlNull(TestDbDao.java:726)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:78)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1922304900", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1922304900'><pre>cn.vko.core.common.exception.impl.ParamException: sql对象不允许为空
+	at cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+	at cn.vko.core.common.util.ExceptionUtil.checkNull(ExceptionUtil.java:132)
+	at cn.vko.core.db.dao.impl.DbDao.query(DbDao.java:191)
+	at cn.vko.core.db.dao.impl.TestDbDao.testQueryBySqlSqlNull(TestDbDao.java:726)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:758)
+	at org.testng.TestRunner.run(TestRunner.java:613)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1062)
+	at org.testng.TestNG.run(TestNG.java:974)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:78)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+</pre></div></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestDbDao@19e3cd51</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestDbDao.testQueryByTableName()'><b>testQueryByTableName</b><br>Test class: cn.vko.core.db.dao.impl.TestDbDao</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestDbDao@19e3cd51</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestDbDao.testQueryByTableNameCnd()'><b>testQueryByTableNameCnd</b><br>Test class: cn.vko.core.db.dao.impl.TestDbDao</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestDbDao@19e3cd51</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestDbDao.testQueryByTableNameCndAndPagerNull()'><b>testQueryByTableNameCndAndPagerNull</b><br>Test class: cn.vko.core.db.dao.impl.TestDbDao</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestDbDao@19e3cd51</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestDbDao.testQueryByTableNameTableNameNull()'><b>testQueryByTableNameTableNameNull</b><br>Test class: cn.vko.core.db.dao.impl.TestDbDao</td>
+<td><div><pre>cn.vko.core.common.exception.impl.ParamException: 查询的表不为空
+	at cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+	at cn.vko.core.common.util.ExceptionUtil.checkEmpty(ExceptionUtil.java:147)
+	at cn.vko.core.db.dao.impl.DbDao.query(DbDao.java:183)
+	at cn.vko.core.db.dao.impl.TestDbDao.testQueryByTableNameTableNameNull(TestDbDao.java:675)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:78)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1056794277", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1056794277'><pre>cn.vko.core.common.exception.impl.ParamException: 查询的表不为空
+	at cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+	at cn.vko.core.common.util.ExceptionUtil.checkEmpty(ExceptionUtil.java:147)
+	at cn.vko.core.db.dao.impl.DbDao.query(DbDao.java:183)
+	at cn.vko.core.db.dao.impl.TestDbDao.testQueryByTableNameTableNameNull(TestDbDao.java:675)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:758)
+	at org.testng.TestRunner.run(TestRunner.java:613)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1062)
+	at org.testng.TestNG.run(TestNG.java:974)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:78)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+</pre></div></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestDbDao@19e3cd51</td></tr>
+<tr>
+<td title='cn.vko.core.db.util.TestDbSqlUtil.testQueryEntity()'><b>testQueryEntity</b><br>Test class: cn.vko.core.db.util.TestDbSqlUtil</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.util.TestDbSqlUtil@518f5824</td></tr>
+<tr>
+<td title='cn.vko.core.db.util.TestDbSqlUtil.testQueryEntityIll()'><b>testQueryEntityIll</b><br>Test class: cn.vko.core.db.util.TestDbSqlUtil</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.util.TestDbSqlUtil@518f5824</td></tr>
+<tr>
+<td title='cn.vko.core.db.util.TestDbSqlUtil.testQueryEntityPager()'><b>testQueryEntityPager</b><br>Test class: cn.vko.core.db.util.TestDbSqlUtil</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.util.TestDbSqlUtil@518f5824</td></tr>
+<tr>
+<td title='cn.vko.core.db.util.TestDbSqlUtil.testQueryEntityPagerRecordCount()'><b>testQueryEntityPagerRecordCount</b><br>Test class: cn.vko.core.db.util.TestDbSqlUtil</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.util.TestDbSqlUtil@518f5824</td></tr>
+<tr>
+<td title='cn.vko.core.db.util.TestDbSqlUtil.testQueryIntAll()'><b>testQueryIntAll</b><br>Test class: cn.vko.core.db.util.TestDbSqlUtil</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.util.TestDbSqlUtil@518f5824</td></tr>
+<tr>
+<td title='cn.vko.core.db.util.TestDbSqlUtil.testQueryIntCastIll()'><b>testQueryIntCastIll</b><br>Test class: cn.vko.core.db.util.TestDbSqlUtil</td>
+<td><div><pre>org.nutz.dao.DaoException: org.nutz.dao.DaoException: !Nutz SQL Error: &apos;select name from mock_entity_4_extend_query&apos;
+PreparedStatement: 
+&apos;select name from mock_entity_4_extend_query&apos;
+	at org.nutz.dao.impl.sql.run.NutDaoRunner.run(NutDaoRunner.java:76)
+	at org.nutz.dao.impl.DaoSupport._exec(DaoSupport.java:199)
+	at org.nutz.dao.impl.DaoSupport.execute(DaoSupport.java:177)
+	at cn.vko.core.db.dao.impl.DbDao.excute(DbDao.java:170)
+	at cn.vko.core.db.util.DbSqlUtil.getResult(DbSqlUtil.java:186)
+	at cn.vko.core.db.util.DbSqlUtil.queryInt(DbSqlUtil.java:252)
+	at cn.vko.core.db.util.DbSqlUtil.queryInt(DbSqlUtil.java:242)
+	at cn.vko.core.db.util.DbSqlUtil.queryInt(DbSqlUtil.java:232)
+	at cn.vko.core.db.util.TestDbSqlUtil.testQueryIntCastIll(TestDbSqlUtil.java:166)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:78)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+Caused by: org.nutz.dao.DaoException: !Nutz SQL Error: &apos;select name from mock_entity_4_extend_query&apos;
+PreparedStatement: 
+&apos;select name from mock_entity_4_extend_query&apos;
+	at org.nutz.dao.impl.sql.run.NutDaoExecutor.exec(NutDaoExecutor.java:90)
+	at org.nutz.dao.impl.DaoSupport$DaoExec.invoke(DaoSupport.java:244)
+	at org.nutz.dao.impl.sql.run.NutDaoRunner.run(NutDaoRunner.java:64)
+	... 41 more
+Caused by: org.h2.jdbc.JdbcSQLException: Data conversion error converting &quot;测试0&quot; [90021-140]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:327)
+	at org.h2.message.DbException.get(DbException.java:156)
+	at org.h2.value.Value.convertTo(Value.java:791)
+	at org.h2.value.Value.getInt(Value.java:419)
+	at org.h2.jdbc.JdbcResultSet.getInt(JdbcResultSet.java:299)
+	at org.nutz.dao.impl.sql.callback.QueryIntCallback.invoke(QueryIntCallback.java:21)
+	at org.nutz.dao.impl.sql.NutSql.onAfter(NutSql.java:212)
+	at org.nutz.dao.impl.sql.run.NutDaoExecutor._runSelect(NutDaoExecutor.java:225)
+	at org.nutz.dao.impl.sql.run.NutDaoExecutor.exec(NutDaoExecutor.java:43)
+	... 43 more
+Caused by: java.lang.NumberFormatException: For input string: &quot;测试0&quot;
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:48)
+	at java.lang.Integer.parseInt(Integer.java:449)
+	at java.lang.Integer.valueOf(Integer.java:528)
+	at java.lang.Integer.decode(Integer.java:958)
+	at org.h2.value.Value.convertTo(Value.java:748)
+	... 49 more
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace24423008", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace24423008'><pre>org.nutz.dao.DaoException: org.nutz.dao.DaoException: !Nutz SQL Error: 'select name from mock_entity_4_extend_query'
+PreparedStatement: 
+'select name from mock_entity_4_extend_query'
+	at org.nutz.dao.impl.sql.run.NutDaoRunner.run(NutDaoRunner.java:76)
+	at org.nutz.dao.impl.DaoSupport._exec(DaoSupport.java:199)
+	at org.nutz.dao.impl.DaoSupport.execute(DaoSupport.java:177)
+	at cn.vko.core.db.dao.impl.DbDao.excute(DbDao.java:170)
+	at cn.vko.core.db.util.DbSqlUtil.getResult(DbSqlUtil.java:186)
+	at cn.vko.core.db.util.DbSqlUtil.queryInt(DbSqlUtil.java:252)
+	at cn.vko.core.db.util.DbSqlUtil.queryInt(DbSqlUtil.java:242)
+	at cn.vko.core.db.util.DbSqlUtil.queryInt(DbSqlUtil.java:232)
+	at cn.vko.core.db.util.TestDbSqlUtil.testQueryIntCastIll(TestDbSqlUtil.java:166)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:758)
+	at org.testng.TestRunner.run(TestRunner.java:613)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1062)
+	at org.testng.TestNG.run(TestNG.java:974)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:78)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+Caused by: org.nutz.dao.DaoException: !Nutz SQL Error: 'select name from mock_entity_4_extend_query'
+PreparedStatement: 
+'select name from mock_entity_4_extend_query'
+	at org.nutz.dao.impl.sql.run.NutDaoExecutor.exec(NutDaoExecutor.java:90)
+	at org.nutz.dao.impl.DaoSupport$DaoExec.invoke(DaoSupport.java:244)
+	at org.nutz.dao.impl.sql.run.NutDaoRunner.run(NutDaoRunner.java:64)
+	... 41 more
+Caused by: org.h2.jdbc.JdbcSQLException: Data conversion error converting "测试0" [90021-140]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:327)
+	at org.h2.message.DbException.get(DbException.java:156)
+	at org.h2.value.Value.convertTo(Value.java:791)
+	at org.h2.value.Value.getInt(Value.java:419)
+	at org.h2.jdbc.JdbcResultSet.getInt(JdbcResultSet.java:299)
+	at org.nutz.dao.impl.sql.callback.QueryIntCallback.invoke(QueryIntCallback.java:21)
+	at org.nutz.dao.impl.sql.NutSql.onAfter(NutSql.java:212)
+	at org.nutz.dao.impl.sql.run.NutDaoExecutor._runSelect(NutDaoExecutor.java:225)
+	at org.nutz.dao.impl.sql.run.NutDaoExecutor.exec(NutDaoExecutor.java:43)
+	... 43 more
+Caused by: java.lang.NumberFormatException: For input string: "测试0"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:48)
+	at java.lang.Integer.parseInt(Integer.java:449)
+	at java.lang.Integer.valueOf(Integer.java:528)
+	at java.lang.Integer.decode(Integer.java:958)
+	at org.h2.value.Value.convertTo(Value.java:748)
+	... 49 more
+</pre></div></td>
+<td>0</td>
+<td>cn.vko.core.db.util.TestDbSqlUtil@518f5824</td></tr>
+<tr>
+<td title='cn.vko.core.db.util.TestDbSqlUtil.testQueryIntIll()'><b>testQueryIntIll</b><br>Test class: cn.vko.core.db.util.TestDbSqlUtil</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.util.TestDbSqlUtil@518f5824</td></tr>
+<tr>
+<td title='cn.vko.core.db.util.TestDbSqlUtil.testQueryIntPager()'><b>testQueryIntPager</b><br>Test class: cn.vko.core.db.util.TestDbSqlUtil</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.util.TestDbSqlUtil@518f5824</td></tr>
+<tr>
+<td title='cn.vko.core.db.util.TestDbSqlUtil.testQueryIntPagerRecordCount()'><b>testQueryIntPagerRecordCount</b><br>Test class: cn.vko.core.db.util.TestDbSqlUtil</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.util.TestDbSqlUtil@518f5824</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestOperateDbDao.testUpdateArray()'><b>testUpdateArray</b><br>Test class: cn.vko.core.db.dao.impl.TestOperateDbDao</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestOperateDbDao@311671b2</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestDbDao.testUpdateArrayAll()'><b>testUpdateArrayAll</b><br>Test class: cn.vko.core.db.dao.impl.TestDbDao</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestDbDao@19e3cd51</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestDbDao.testUpdateArrayParty()'><b>testUpdateArrayParty</b><br>Test class: cn.vko.core.db.dao.impl.TestDbDao</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestDbDao@19e3cd51</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestDbDao.testUpdateByClassTableNameNull()'><b>testUpdateByClassTableNameNull</b><br>Test class: cn.vko.core.db.dao.impl.TestDbDao</td>
+<td><div><pre>cn.vko.core.common.exception.impl.ParamException: 类型不能为空
+	at cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+	at cn.vko.core.common.util.ExceptionUtil.checkNull(ExceptionUtil.java:132)
+	at cn.vko.core.db.dao.impl.DbDao.update(DbDao.java:146)
+	at cn.vko.core.db.dao.impl.TestDbDao.testUpdateByClassTableNameNull(TestDbDao.java:498)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:78)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace160634233", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace160634233'><pre>cn.vko.core.common.exception.impl.ParamException: 类型不能为空
+	at cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+	at cn.vko.core.common.util.ExceptionUtil.checkNull(ExceptionUtil.java:132)
+	at cn.vko.core.db.dao.impl.DbDao.update(DbDao.java:146)
+	at cn.vko.core.db.dao.impl.TestDbDao.testUpdateByClassTableNameNull(TestDbDao.java:498)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:758)
+	at org.testng.TestRunner.run(TestRunner.java:613)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1062)
+	at org.testng.TestNG.run(TestNG.java:974)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:78)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+</pre></div></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestDbDao@19e3cd51</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestDbDao.testUpdateByTableNameTableNameNull()'><b>testUpdateByTableNameTableNameNull</b><br>Test class: cn.vko.core.db.dao.impl.TestDbDao</td>
+<td><div><pre>cn.vko.core.common.exception.impl.ParamException: 表名不能为空
+	at cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+	at cn.vko.core.common.util.ExceptionUtil.checkEmpty(ExceptionUtil.java:147)
+	at cn.vko.core.db.dao.impl.DbDao.update(DbDao.java:137)
+	at cn.vko.core.db.dao.impl.TestDbDao.testUpdateByTableNameTableNameNull(TestDbDao.java:492)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:78)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace392609752", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace392609752'><pre>cn.vko.core.common.exception.impl.ParamException: 表名不能为空
+	at cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+	at cn.vko.core.common.util.ExceptionUtil.checkEmpty(ExceptionUtil.java:147)
+	at cn.vko.core.db.dao.impl.DbDao.update(DbDao.java:137)
+	at cn.vko.core.db.dao.impl.TestDbDao.testUpdateByTableNameTableNameNull(TestDbDao.java:492)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:758)
+	at org.testng.TestRunner.run(TestRunner.java:613)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1062)
+	at org.testng.TestNG.run(TestNG.java:974)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:78)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+</pre></div></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestDbDao@19e3cd51</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestOperateDbDao.testUpdateCollection()'><b>testUpdateCollection</b><br>Test class: cn.vko.core.db.dao.impl.TestOperateDbDao</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestOperateDbDao@311671b2</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestDbDao.testUpdateListAll()'><b>testUpdateListAll</b><br>Test class: cn.vko.core.db.dao.impl.TestDbDao</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestDbDao@19e3cd51</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestDbDao.testUpdateListParty()'><b>testUpdateListParty</b><br>Test class: cn.vko.core.db.dao.impl.TestDbDao</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestDbDao@19e3cd51</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestDbDao.testUpdateMap()'><b>testUpdateMap</b><br>Test class: cn.vko.core.db.dao.impl.TestDbDao</td>
+<td><div><pre>cn.vko.core.common.exception.impl.ParamException: 更新的对象不允许为空
+	at cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+	at cn.vko.core.common.util.ExceptionUtil.checkEmpty(ExceptionUtil.java:147)
+	at cn.vko.core.db.dao.impl.DbDao.update(DbDao.java:119)
+	at cn.vko.core.db.dao.impl.TestDbDao.testUpdateMap(TestDbDao.java:503)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:78)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace336880250", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace336880250'><pre>cn.vko.core.common.exception.impl.ParamException: 更新的对象不允许为空
+	at cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+	at cn.vko.core.common.util.ExceptionUtil.checkEmpty(ExceptionUtil.java:147)
+	at cn.vko.core.db.dao.impl.DbDao.update(DbDao.java:119)
+	at cn.vko.core.db.dao.impl.TestDbDao.testUpdateMap(TestDbDao.java:503)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:758)
+	at org.testng.TestRunner.run(TestRunner.java:613)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1062)
+	at org.testng.TestNG.run(TestNG.java:974)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:78)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+</pre></div></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestDbDao@19e3cd51</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestOperateDbDao.testUpdateMap()'><b>testUpdateMap</b><br>Test class: cn.vko.core.db.dao.impl.TestOperateDbDao</td>
+<td><div><pre>cn.vko.core.common.exception.impl.ParamException: 插入的数据不为空
+	at cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+	at cn.vko.core.common.util.ExceptionUtil.checkEmpty(ExceptionUtil.java:147)
+	at cn.vko.core.db.dao.impl.OperateDbDao.update(OperateDbDao.java:184)
+	at cn.vko.core.db.dao.impl.TestOperateDbDao.testUpdateMap(TestOperateDbDao.java:204)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:78)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace123234458", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace123234458'><pre>cn.vko.core.common.exception.impl.ParamException: 插入的数据不为空
+	at cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+	at cn.vko.core.common.util.ExceptionUtil.checkEmpty(ExceptionUtil.java:147)
+	at cn.vko.core.db.dao.impl.OperateDbDao.update(OperateDbDao.java:184)
+	at cn.vko.core.db.dao.impl.TestOperateDbDao.testUpdateMap(TestOperateDbDao.java:204)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:758)
+	at org.testng.TestRunner.run(TestRunner.java:613)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1062)
+	at org.testng.TestNG.run(TestNG.java:974)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:78)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+</pre></div></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestOperateDbDao@311671b2</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestOperateDbDao.testUpdateNull()'><b>testUpdateNull</b><br>Test class: cn.vko.core.db.dao.impl.TestOperateDbDao</td>
+<td><div><pre>cn.vko.core.common.exception.impl.ParamException: 插入的数据不为空
+	at cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+	at cn.vko.core.common.util.ExceptionUtil.checkEmpty(ExceptionUtil.java:147)
+	at cn.vko.core.db.dao.impl.OperateDbDao.update(OperateDbDao.java:184)
+	at cn.vko.core.db.dao.impl.TestOperateDbDao.testUpdateNull(TestOperateDbDao.java:138)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:78)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1027299898", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1027299898'><pre>cn.vko.core.common.exception.impl.ParamException: 插入的数据不为空
+	at cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+	at cn.vko.core.common.util.ExceptionUtil.checkEmpty(ExceptionUtil.java:147)
+	at cn.vko.core.db.dao.impl.OperateDbDao.update(OperateDbDao.java:184)
+	at cn.vko.core.db.dao.impl.TestOperateDbDao.testUpdateNull(TestOperateDbDao.java:138)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:758)
+	at org.testng.TestRunner.run(TestRunner.java:613)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1062)
+	at org.testng.TestNG.run(TestNG.java:974)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:78)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+</pre></div></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestOperateDbDao@311671b2</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestDbDao.testUpdateObjNull()'><b>testUpdateObjNull</b><br>Test class: cn.vko.core.db.dao.impl.TestDbDao</td>
+<td><div><pre>cn.vko.core.common.exception.impl.ParamException: 更新的对象不允许为空
+	at cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+	at cn.vko.core.common.util.ExceptionUtil.checkEmpty(ExceptionUtil.java:147)
+	at cn.vko.core.db.dao.impl.DbDao.update(DbDao.java:119)
+	at cn.vko.core.db.dao.impl.TestDbDao.testUpdateObjNull(TestDbDao.java:312)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:78)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1179468258", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1179468258'><pre>cn.vko.core.common.exception.impl.ParamException: 更新的对象不允许为空
+	at cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+	at cn.vko.core.common.util.ExceptionUtil.checkEmpty(ExceptionUtil.java:147)
+	at cn.vko.core.db.dao.impl.DbDao.update(DbDao.java:119)
+	at cn.vko.core.db.dao.impl.TestDbDao.testUpdateObjNull(TestDbDao.java:312)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:758)
+	at org.testng.TestRunner.run(TestRunner.java:613)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1062)
+	at org.testng.TestNG.run(TestNG.java:974)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:78)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+</pre></div></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestDbDao@19e3cd51</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestOperateDbDao.testUpdateSignle()'><b>testUpdateSignle</b><br>Test class: cn.vko.core.db.dao.impl.TestOperateDbDao</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestOperateDbDao@311671b2</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestDbDao.testUpdateSingleAll()'><b>testUpdateSingleAll</b><br>Test class: cn.vko.core.db.dao.impl.TestDbDao</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestDbDao@19e3cd51</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestDbDao.testUpdateSingleParty()'><b>testUpdateSingleParty</b><br>Test class: cn.vko.core.db.dao.impl.TestDbDao</td>
+<td></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestDbDao@19e3cd51</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestDbDao.testUpdateWithoutId()'><b>testUpdateWithoutId</b><br>Test class: cn.vko.core.db.dao.impl.TestDbDao</td>
+<td><div><pre>java.lang.RuntimeException: Don&apos;t know how to make fetch key cn.vko.core.db.mock.entity.MockEntityWithoutId:&apos;MockEntityWithoutId(id=0, name=测试)&apos;
+	at org.nutz.lang.Lang.makeThrow(Lang.java:96)
+	at org.nutz.dao.util.Pojos$Items.cndAuto(Pojos.java:145)
+	at org.nutz.dao.impl.EntityOperator.addUpdate(EntityOperator.java:74)
+	at org.nutz.dao.impl.EntityOperator.addUpdate(EntityOperator.java:56)
+	at org.nutz.dao.impl.NutDao.update(NutDao.java:210)
+	at cn.vko.core.db.dao.impl.DbDao.update(DbDao.java:124)
+	at cn.vko.core.db.dao.impl.TestDbDao.testUpdateWithoutId(TestDbDao.java:318)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:78)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace281794780", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace281794780'><pre>java.lang.RuntimeException: Don't know how to make fetch key cn.vko.core.db.mock.entity.MockEntityWithoutId:'MockEntityWithoutId(id=0, name=测试)'
+	at org.nutz.lang.Lang.makeThrow(Lang.java:96)
+	at org.nutz.dao.util.Pojos$Items.cndAuto(Pojos.java:145)
+	at org.nutz.dao.impl.EntityOperator.addUpdate(EntityOperator.java:74)
+	at org.nutz.dao.impl.EntityOperator.addUpdate(EntityOperator.java:56)
+	at org.nutz.dao.impl.NutDao.update(NutDao.java:210)
+	at cn.vko.core.db.dao.impl.DbDao.update(DbDao.java:124)
+	at cn.vko.core.db.dao.impl.TestDbDao.testUpdateWithoutId(TestDbDao.java:318)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:758)
+	at org.testng.TestRunner.run(TestRunner.java:613)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1062)
+	at org.testng.TestNG.run(TestNG.java:974)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:78)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+</pre></div></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestDbDao@19e3cd51</td></tr>
+<tr>
+<td title='cn.vko.core.db.dao.impl.TestDbDao.testUpdateWithoutIdParty()'><b>testUpdateWithoutIdParty</b><br>Test class: cn.vko.core.db.dao.impl.TestDbDao</td>
+<td><div><pre>java.lang.RuntimeException: Don&apos;t know how to make fetch key cn.vko.core.db.mock.entity.MockEntityWithoutId:&apos;MockEntityWithoutId(id=0, name=测试)&apos;
+	at org.nutz.lang.Lang.makeThrow(Lang.java:96)
+	at org.nutz.dao.util.Pojos$Items.cndAuto(Pojos.java:145)
+	at org.nutz.dao.impl.EntityOperator.addUpdate(EntityOperator.java:74)
+	at org.nutz.dao.impl.EntityOperator.addUpdate(EntityOperator.java:56)
+	at org.nutz.dao.impl.NutDao.update(NutDao.java:210)
+	at org.nutz.dao.impl.NutDao$2.run(NutDao.java:225)
+	at org.nutz.dao.FieldFilter.run(FieldFilter.java:285)
+	at org.nutz.dao.impl.NutDao.update(NutDao.java:228)
+	at cn.vko.core.db.dao.impl.DbDao.update(DbDao.java:131)
+	at cn.vko.core.db.dao.impl.TestDbDao.testUpdateWithoutIdParty(TestDbDao.java:324)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:78)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace923425825", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace923425825'><pre>java.lang.RuntimeException: Don't know how to make fetch key cn.vko.core.db.mock.entity.MockEntityWithoutId:'MockEntityWithoutId(id=0, name=测试)'
+	at org.nutz.lang.Lang.makeThrow(Lang.java:96)
+	at org.nutz.dao.util.Pojos$Items.cndAuto(Pojos.java:145)
+	at org.nutz.dao.impl.EntityOperator.addUpdate(EntityOperator.java:74)
+	at org.nutz.dao.impl.EntityOperator.addUpdate(EntityOperator.java:56)
+	at org.nutz.dao.impl.NutDao.update(NutDao.java:210)
+	at org.nutz.dao.impl.NutDao$2.run(NutDao.java:225)
+	at org.nutz.dao.FieldFilter.run(FieldFilter.java:285)
+	at org.nutz.dao.impl.NutDao.update(NutDao.java:228)
+	at cn.vko.core.db.dao.impl.DbDao.update(DbDao.java:131)
+	at cn.vko.core.db.dao.impl.TestDbDao.testUpdateWithoutIdParty(TestDbDao.java:324)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:758)
+	at org.testng.TestRunner.run(TestRunner.java:613)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1062)
+	at org.testng.TestNG.run(TestNG.java:974)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:172)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:78)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:70)
+</pre></div></td>
+<td>0</td>
+<td>cn.vko.core.db.dao.impl.TestDbDao@19e3cd51</td></tr>
+</table><p>
+</body>
+</html>

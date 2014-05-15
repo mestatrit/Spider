@@ -1,0 +1,23 @@
+package cn.xuexibao.business.spider.downloader;
+
+import org.apache.http.HttpHost;
+import org.testng.annotations.Test;
+
+import cn.xuexibao.business.spider.downloader.ProxyPool;
+
+public class ProxyPoolTest {
+
+	@Test
+	public void testCheckPool() throws Exception {
+		ProxyPool.checkPool();
+		System.in.read();
+	}
+
+	@Test
+	public void testIsCanUse() throws Exception {
+		HttpHost host = ProxyPool.popHost();
+		System.out.print("------------------------------"
+				+ ProxyPool.isCanUse(host));
+	}
+
+}

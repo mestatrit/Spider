@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="2626" started-at="2014-05-15T15:52:07Z" finished-at="2014-05-15T15:52:09Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="2626" started-at="2014-05-15T15:52:07Z" finished-at="2014-05-15T15:52:09Z">
+      <class name="cn.xuexibao.business.spider.downloader.CopyOfImgDownloaderTest">
+        <test-method status="PASS" signature="testDownload()[pri:0, instance:cn.xuexibao.business.spider.downloader.CopyOfImgDownloaderTest@1fcef4f7]" name="testDownload" duration-ms="2617" started-at="2014-05-15T15:52:07Z" finished-at="2014-05-15T15:52:09Z">
+        </test-method> <!-- testDownload -->
+      </class> <!-- cn.xuexibao.business.spider.downloader.CopyOfImgDownloaderTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

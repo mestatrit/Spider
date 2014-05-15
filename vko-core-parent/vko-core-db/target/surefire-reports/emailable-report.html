@@ -1,0 +1,666 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.param,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.param td,table.param th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.param th {vertical-align:bottom}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.param td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.param tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Test</td><td class="numi">105</td><td class="numi">105</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0.8 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<a id="summary"></a>
+<table cellspacing=0 cellpadding=0 class="passed">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Time<br/>(Msecs)</th></tr>
+<tr><th colspan="4">Test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">cn.vko.core.db.dao.impl.TestDbDao<td><a href="#m1"><b>testInsertWithOutAutoHasId</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr>
+<tr class="passedeven"><td rowspan="1">cn.vko.core.db.dao.impl.TestOperateDbDao<td><a href="#m2"><b>testUpdateMap</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="1">cn.vko.core.db.dao.impl.TestDbDao<td><a href="#m3"><b>testFetchByClassNull</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="1">cn.vko.core.db.util.TestDbExendUtil<td><a href="#m4"><b>testAbleSignleNoral</b>  </a></td><td class="numi">1</td><td class="numi">2</td></tr>
+<tr class="passedodd"><td rowspan="1">cn.vko.core.db.dao.impl.TestDbDao<td><a href="#m5"><b>testUpdateListParty</b>  </a></td><td class="numi">1</td><td class="numi">2</td></tr>
+<tr class="passedeven"><td rowspan="1">cn.vko.core.db.util.TestDbSqlUtil<td><a href="#m6"><b>testFetchLongIll</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr>
+<tr class="passedodd"><td rowspan="1">cn.vko.core.db.util.TestRecordUtil<td><a href="#m7"><b>testGetDateIll</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="1">cn.vko.core.db.util.TestDbExendUtil<td><a href="#m8"><b>testCount</b>  </a></td><td class="numi">1</td><td class="numi">2</td></tr>
+<tr class="passedodd"><td rowspan="3">cn.vko.core.db.dao.impl.TestDbDao<td><a href="#m9"><b>testFetchBySqlNotExists</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr><tr class="passedodd"><td><a href="#m10"><b>testQueryByClassCndAndPagerNull</b>  </a></td><td class="numi">1</td><td class="numi">3</td></tr><tr class="passedodd"><td><a href="#m11"><b>testInsertCollectionNull</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="1">cn.vko.core.db.util.TestDbSqlUtil<td><a href="#m12"><b>testQueryIntPager</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="1">cn.vko.core.db.dao.impl.TestDbDao<td><a href="#m13"><b>testUpdateWithoutId</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="1">cn.vko.core.db.util.TestDbSqlUtil<td><a href="#m14"><b>testFetchStringIll</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr>
+<tr class="passedodd"><td rowspan="2">cn.vko.core.db.dao.impl.TestDbDao<td><a href="#m15"><b>testFetchByClassByCnd</b>  </a></td><td class="numi">1</td><td class="numi">5</td></tr><tr class="passedodd"><td><a href="#m16"><b>testDeleteByIdNull</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr>
+<tr class="passedeven"><td rowspan="1">cn.vko.core.db.util.TestDbExendUtil<td><a href="#m17"><b>testEnableStatus</b>  </a></td><td class="numi">1</td><td class="numi">2</td></tr>
+<tr class="passedodd"><td rowspan="5">cn.vko.core.db.dao.impl.TestDbDao<td><a href="#m18"><b>testQueryBySqlSqlNull</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr><tr class="passedodd"><td><a href="#m19"><b>testQueryBySqlCndAndPagerNull</b>  </a></td><td class="numi">1</td><td class="numi">2</td></tr><tr class="passedodd"><td><a href="#m20"><b>testUpdateArrayAll</b>  </a></td><td class="numi">1</td><td class="numi">3</td></tr><tr class="passedodd"><td><a href="#m21"><b>testDeleteByIdNormal</b>  </a></td><td class="numi">1</td><td class="numi">7</td></tr><tr class="passedodd"><td><a href="#m22"><b>testInsertTableByTableNameChainNull</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr>
+<tr class="passedeven"><td rowspan="1">cn.vko.core.db.util.TestDbExendUtil<td><a href="#m23"><b>testCountNull</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr>
+<tr class="passedodd"><td rowspan="8">cn.vko.core.db.dao.impl.TestDbDao<td><a href="#m24"><b>testFetchByTableNameNull</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr><tr class="passedodd"><td><a href="#m25"><b>testUpdateSingleParty</b>  </a></td><td class="numi">1</td><td class="numi">2</td></tr><tr class="passedodd"><td><a href="#m26"><b>testQueryBySqlCnd</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr><tr class="passedodd"><td><a href="#m27"><b>testExcuteNull</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr><tr class="passedodd"><td><a href="#m28"><b>testQueryByTableNameCndAndPagerNull</b>  </a></td><td class="numi">1</td><td class="numi">3</td></tr><tr class="passedodd"><td><a href="#m29"><b>testDeleteNull</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr><tr class="passedodd"><td><a href="#m30"><b>testUpdateByTableNameTableNameNull</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr><tr class="passedodd"><td><a href="#m31"><b>testQueryByClassCnd</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr>
+<tr class="passedeven"><td rowspan="2">cn.vko.core.db.util.TestDbSqlUtil<td><a href="#m32"><b>testQueryIntIll</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr><tr class="passedeven"><td><a href="#m33"><b>testQueryEntityPagerRecordCount</b>  </a></td><td class="numi">1</td><td class="numi">3</td></tr>
+<tr class="passedodd"><td rowspan="2">cn.vko.core.db.dao.impl.TestOperateDbDao<td><a href="#m34"><b>testUpdateArray</b>  </a></td><td class="numi">1</td><td class="numi">3</td></tr><tr class="passedodd"><td><a href="#m35"><b>testUpdateSignle</b>  </a></td><td class="numi">1</td><td class="numi">2</td></tr>
+<tr class="passedeven"><td rowspan="3">cn.vko.core.db.dao.impl.TestDbDao<td><a href="#m36"><b>testInsertArrayNotSame</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr><tr class="passedeven"><td><a href="#m37"><b>testInsertTableByClassClassNull</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr><tr class="passedeven"><td><a href="#m38"><b>testFetchByClassByNotExistsId</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr>
+<tr class="passedodd"><td rowspan="1">cn.vko.core.db.util.TestDbSqlUtil<td><a href="#m39"><b>testQueryEntityPager</b>  </a></td><td class="numi">1</td><td class="numi">2</td></tr>
+<tr class="passedeven"><td rowspan="1">cn.vko.core.db.util.TestRecordUtil<td><a href="#m40"><b>testGetLongIll</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="1">cn.vko.core.db.util.TestDbSqlUtil<td><a href="#m41"><b>testQueryIntAll</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr>
+<tr class="passedeven"><td rowspan="5">cn.vko.core.db.dao.impl.TestDbDao<td><a href="#m42"><b>testInsertListHasNull</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr><tr class="passedeven"><td><a href="#m43"><b>testFetchBySql</b>  </a></td><td class="numi">1</td><td class="numi">2</td></tr><tr class="passedeven"><td><a href="#m44"><b>testInsertSingleWithNotAutoIdNotHasId</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr><tr class="passedeven"><td><a href="#m45"><b>testFetchBySqlNull</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr><tr class="passedeven"><td><a href="#m46"><b>testQueryByClassClazzNull</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="1">cn.vko.core.db.dao.impl.TestOperateDbDao<td><a href="#m47"><b>testInsertArray</b>  </a></td><td class="numi">1</td><td class="numi">4</td></tr>
+<tr class="passedeven"><td rowspan="1">cn.vko.core.db.util.TestDbSqlUtil<td><a href="#m48"><b>testQueryIntPagerRecordCount</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="1">cn.vko.core.db.dao.impl.TestDbDao<td><a href="#m49"><b>testQueryByTableNameTableNameNull</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="1">cn.vko.core.db.util.TestDbSqlUtil<td><a href="#m50"><b>testQueryIntCastIll</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr>
+<tr class="passedodd"><td rowspan="1">cn.vko.core.db.dao.impl.TestOperateDbDao<td><a href="#m51"><b>testInsertCollection</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr>
+<tr class="passedeven"><td rowspan="5">cn.vko.core.db.dao.impl.TestDbDao<td><a href="#m52"><b>testInsertSingleWithoutIdNotHasId</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr><tr class="passedeven"><td><a href="#m53"><b>testUpdateByClassTableNameNull</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr><tr class="passedeven"><td><a href="#m54"><b>testInsertTableByTableNameTabelNameNull</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr><tr class="passedeven"><td><a href="#m55"><b>testUpdateArrayParty</b>  </a></td><td class="numi">1</td><td class="numi">2</td></tr><tr class="passedeven"><td><a href="#m56"><b>testInsertArray</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr>
+<tr class="passedodd"><td rowspan="1">cn.vko.core.db.util.TestDbExendUtil<td><a href="#m57"><b>testCountCnd</b>  </a></td><td class="numi">1</td><td class="numi">2</td></tr>
+<tr class="passedeven"><td rowspan="1">cn.vko.core.db.dao.impl.TestDbDao<td><a href="#m58"><b>testFetchByTableNameByCnd</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr>
+<tr class="passedodd"><td rowspan="1">cn.vko.core.db.util.TestRecordUtil<td><a href="#m59"><b>testGetBooleanIll</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="4">cn.vko.core.db.dao.impl.TestDbDao<td><a href="#m60"><b>testQueryByTableName</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr><tr class="passedeven"><td><a href="#m61"><b>testFetchByTableNameById</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr><tr class="passedeven"><td><a href="#m62"><b>testInsertTableByClassChainNull</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr><tr class="passedeven"><td><a href="#m63"><b>testUpdateWithoutIdParty</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="1">cn.vko.core.db.util.TestDbSqlUtil<td><a href="#m64"><b>testQueryEntity</b>  </a></td><td class="numi">1</td><td class="numi">10</td></tr>
+<tr class="passedeven"><td rowspan="9">cn.vko.core.db.dao.impl.TestDbDao<td><a href="#m65"><b>testQueryBySql</b>  </a></td><td class="numi">1</td><td class="numi">2</td></tr><tr class="passedeven"><td><a href="#m66"><b>testUpdateSingleAll</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr><tr class="passedeven"><td><a href="#m67"><b>testQueryByTableNameCnd</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr><tr class="passedeven"><td><a href="#m68"><b>testFetchByTableNameByNotExistsId</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr><tr class="passedeven"><td><a href="#m69"><b>testInsertTableByClass</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr><tr class="passedeven"><td><a href="#m70"><b>testDeleteNormal</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr><tr class="passedeven"><td><a href="#m71"><b>testInsertList</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr><tr class="passedeven"><td><a href="#m72"><b>testUpdateMap</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr><tr class="passedeven"><td><a href="#m73"><b>testQueryByClass</b>  </a></td><td class="numi">1</td><td class="numi">2</td></tr>
+<tr class="passedodd"><td rowspan="1">cn.vko.core.db.dao.impl.TestOperateDbDao<td><a href="#m74"><b>testInsertNull</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="3">cn.vko.core.db.dao.impl.TestDbDao<td><a href="#m75"><b>testInsertMap</b>  </a></td><td class="numi">1</td><td class="numi">2</td></tr><tr class="passedeven"><td><a href="#m76"><b>testUpdateObjNull</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr><tr class="passedeven"><td><a href="#m77"><b>testInsertMapNull</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="1">cn.vko.core.db.util.TestDbSqlUtil<td><a href="#m78"><b>testFetchEntity</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr>
+<tr class="passedeven"><td rowspan="1">cn.vko.core.db.dao.impl.TestDbDao<td><a href="#m79"><b>testFetchByIdNotHasId</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="1">cn.vko.core.db.dao.impl.TestOperateDbDao<td><a href="#m80"><b>testInsertMap</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr>
+<tr class="passedeven"><td rowspan="1">cn.vko.core.db.dao.impl.TestDbDao<td><a href="#m81"><b>testFetchByClassById</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr>
+<tr class="passedodd"><td rowspan="1">cn.vko.core.db.dao.impl.TestOperateDbDao<td><a href="#m82"><b>testUpdateCollection</b>  </a></td><td class="numi">1</td><td class="numi">2</td></tr>
+<tr class="passedeven"><td rowspan="1">cn.vko.core.db.dao.impl.TestDbDao<td><a href="#m83"><b>testInsertSingleWithAutoIdNotHasId</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="1">cn.vko.core.db.util.TestDbSqlUtil<td><a href="#m84"><b>testFetchSignleNormal</b>  </a></td><td class="numi">1</td><td class="numi">3</td></tr>
+<tr class="passedeven"><td rowspan="1">cn.vko.core.db.util.TestDbExendUtil<td><a href="#m85"><b>testAbleMulipt</b>  </a></td><td class="numi">1</td><td class="numi">6</td></tr>
+<tr class="passedodd"><td rowspan="1">cn.vko.core.db.util.TestRecordUtil<td><a href="#m86"><b>testGetDoubleIll</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="1">cn.vko.core.db.util.TestEntityUtil<td><a href="#m87"><b>testGetTableName</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="1">cn.vko.core.db.dao.impl.TestDbDao<td><a href="#m88"><b>testInsertArrayHasNull</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr>
+<tr class="passedeven"><td rowspan="1">cn.vko.core.db.util.TestDbExendUtil<td><a href="#m89"><b>testDisableStatus</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr>
+<tr class="passedodd"><td rowspan="2">cn.vko.core.db.dao.impl.TestOperateDbDao<td><a href="#m90"><b>testInsertSignle</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr><tr class="passedodd"><td><a href="#m91"><b>testInsertWithUserId</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr>
+<tr class="passedeven"><td rowspan="2">cn.vko.core.db.dao.impl.TestDbDao<td><a href="#m92"><b>testInsertNull</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr><tr class="passedeven"><td><a href="#m93"><b>testFetchByCndNotHasId</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="1">cn.vko.core.db.dao.impl.TestOperateDbDao<td><a href="#m94"><b>testUpdateNull</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="2">cn.vko.core.db.util.TestDbSqlUtil<td><a href="#m95"><b>testQueryEntityIll</b>  </a></td><td class="numi">1</td><td class="numi">9</td></tr><tr class="passedeven"><td><a href="#m96"><b>testFetchIntIll</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="1">cn.vko.core.db.util.TestRecordUtil<td><a href="#m97"><b>testGetBoolean</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="1">cn.vko.core.db.util.TestEntityUtil<td><a href="#m98"><b>testEName2TName</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr>
+<tr class="passedodd"><td rowspan="1">cn.vko.core.db.dao.impl.TestDbDao<td><a href="#m99"><b>testInsertArrayNull</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="1">cn.vko.core.db.util.TestRecordUtil<td><a href="#m100"><b>testGetLong</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="4">cn.vko.core.db.dao.impl.TestDbDao<td><a href="#m101"><b>testUpdateListAll</b>  </a></td><td class="numi">1</td><td class="numi">3</td></tr><tr class="passedodd"><td><a href="#m102"><b>testInsertTableByTableName</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr><tr class="passedodd"><td><a href="#m103"><b>testDeleteWithoutId</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr><tr class="passedodd"><td><a href="#m104"><b>testInsertSingleWithAutoIdHasId</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="1">cn.vko.core.db.util.TestRecordUtil<td><a href="#m105"><b>testGetDouble</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr>
+</table>
+<h1>Test</h1>
+<a id="m1"></a><h2>cn.vko.core.db.dao.impl.TestDbDao:testInsertWithOutAutoHasId</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m2"></a><h2>cn.vko.core.db.dao.impl.TestOperateDbDao:testUpdateMap</h2>
+<div style="padding-left:3em">
+<p>插入的数据不为空</p>
+cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+<br/>at cn.vko.core.common.util.ExceptionUtil.checkEmpty(ExceptionUtil.java:147)
+<br/>at cn.vko.core.db.dao.impl.OperateDbDao.update(OperateDbDao.java:184)
+<br/>at cn.vko.core.db.dao.impl.TestOperateDbDao.testUpdateMap(TestOperateDbDao.java:204)
+<br/>34 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m3"></a><h2>cn.vko.core.db.dao.impl.TestDbDao:testFetchByClassNull</h2>
+<div style="padding-left:3em">
+<p>class不能为空</p>
+cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+<br/>at cn.vko.core.common.util.ExceptionUtil.checkNull(ExceptionUtil.java:132)
+<br/>at cn.vko.core.db.dao.impl.DbDao.fetch(DbDao.java:215)
+<br/>at cn.vko.core.db.dao.impl.TestDbDao.testFetchByClassNull(TestDbDao.java:509)
+<br/>34 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m4"></a><h2>cn.vko.core.db.util.TestDbExendUtil:testAbleSignleNoral</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m5"></a><h2>cn.vko.core.db.dao.impl.TestDbDao:testUpdateListParty</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m6"></a><h2>cn.vko.core.db.util.TestDbSqlUtil:testFetchLongIll</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m7"></a><h2>cn.vko.core.db.util.TestRecordUtil:testGetDateIll</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m8"></a><h2>cn.vko.core.db.util.TestDbExendUtil:testCount</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m9"></a><h2>cn.vko.core.db.dao.impl.TestDbDao:testFetchBySqlNotExists</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m10"></a><h2>cn.vko.core.db.dao.impl.TestDbDao:testQueryByClassCndAndPagerNull</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m11"></a><h2>cn.vko.core.db.dao.impl.TestDbDao:testInsertCollectionNull</h2>
+<div style="padding-left:3em">
+<p>插入的数据不为空</p>
+cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+<br/>at cn.vko.core.common.util.ExceptionUtil.checkEmpty(ExceptionUtil.java:147)
+<br/>at cn.vko.core.db.dao.impl.DbDao.insert(DbDao.java:69)
+<br/>at cn.vko.core.db.dao.impl.TestDbDao.testInsertCollectionNull(TestDbDao.java:104)
+<br/>34 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m12"></a><h2>cn.vko.core.db.util.TestDbSqlUtil:testQueryIntPager</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m13"></a><h2>cn.vko.core.db.dao.impl.TestDbDao:testUpdateWithoutId</h2>
+<div style="padding-left:3em">
+<p>Don&apos;t know how to make fetch key cn.vko.core.db.mock.entity.MockEntityWithoutId:&apos;MockEntityWithoutId(id=0, name=测试)&apos;</p>
+org.nutz.lang.Lang.makeThrow(Lang.java:96)
+<br/>at org.nutz.dao.util.Pojos$Items.cndAuto(Pojos.java:145)
+<br/>at org.nutz.dao.impl.EntityOperator.addUpdate(EntityOperator.java:74)
+<br/>at org.nutz.dao.impl.EntityOperator.addUpdate(EntityOperator.java:56)
+<br/>at org.nutz.dao.impl.NutDao.update(NutDao.java:210)
+<br/>at cn.vko.core.db.dao.impl.DbDao.update(DbDao.java:124)
+<br/>at cn.vko.core.db.dao.impl.TestDbDao.testUpdateWithoutId(TestDbDao.java:318)
+<br/>34 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m14"></a><h2>cn.vko.core.db.util.TestDbSqlUtil:testFetchStringIll</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m15"></a><h2>cn.vko.core.db.dao.impl.TestDbDao:testFetchByClassByCnd</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m16"></a><h2>cn.vko.core.db.dao.impl.TestDbDao:testDeleteByIdNull</h2>
+<div style="padding-left:3em">
+<p>clazz不能为空</p>
+cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+<br/>at cn.vko.core.common.util.ExceptionUtil.checkNull(ExceptionUtil.java:132)
+<br/>at cn.vko.core.db.dao.impl.DbDao.delete(DbDao.java:163)
+<br/>at cn.vko.core.db.dao.impl.TestDbDao.testDeleteByIdNull(TestDbDao.java:627)
+<br/>34 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m17"></a><h2>cn.vko.core.db.util.TestDbExendUtil:testEnableStatus</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m18"></a><h2>cn.vko.core.db.dao.impl.TestDbDao:testQueryBySqlSqlNull</h2>
+<div style="padding-left:3em">
+<p>sql对象不允许为空</p>
+cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+<br/>at cn.vko.core.common.util.ExceptionUtil.checkNull(ExceptionUtil.java:132)
+<br/>at cn.vko.core.db.dao.impl.DbDao.query(DbDao.java:191)
+<br/>at cn.vko.core.db.dao.impl.TestDbDao.testQueryBySqlSqlNull(TestDbDao.java:726)
+<br/>34 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m19"></a><h2>cn.vko.core.db.dao.impl.TestDbDao:testQueryBySqlCndAndPagerNull</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m20"></a><h2>cn.vko.core.db.dao.impl.TestDbDao:testUpdateArrayAll</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m21"></a><h2>cn.vko.core.db.dao.impl.TestDbDao:testDeleteByIdNormal</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m22"></a><h2>cn.vko.core.db.dao.impl.TestDbDao:testInsertTableByTableNameChainNull</h2>
+<div style="padding-left:3em">
+<p>chain不能为空</p>
+cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+<br/>at cn.vko.core.common.util.ExceptionUtil.checkNull(ExceptionUtil.java:132)
+<br/>at cn.vko.core.db.dao.impl.DbDao.insert(DbDao.java:106)
+<br/>at cn.vko.core.db.dao.impl.TestDbDao.testInsertTableByTableNameChainNull(TestDbDao.java:302)
+<br/>34 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m23"></a><h2>cn.vko.core.db.util.TestDbExendUtil:testCountNull</h2>
+<div style="padding-left:3em">
+<p>类型不能为空</p>
+cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+<br/>at cn.vko.core.common.util.ExceptionUtil.checkNull(ExceptionUtil.java:132)
+<br/>at cn.vko.core.db.util.EntityUtil.getTableName(EntityUtil.java:46)
+<br/>at cn.vko.core.db.util.DbExtendUtil.count(DbExtendUtil.java:54)
+<br/>at cn.vko.core.db.util.DbExtendUtil.count(DbExtendUtil.java:38)
+<br/>at cn.vko.core.db.util.TestDbExendUtil.testCountNull(TestDbExendUtil.java:95)
+<br/>34 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m24"></a><h2>cn.vko.core.db.dao.impl.TestDbDao:testFetchByTableNameNull</h2>
+<div style="padding-left:3em">
+<p>tableName不能为空</p>
+cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+<br/>at cn.vko.core.common.util.ExceptionUtil.checkEmpty(ExceptionUtil.java:147)
+<br/>at cn.vko.core.db.dao.impl.DbDao.fetch(DbDao.java:231)
+<br/>at cn.vko.core.db.dao.impl.TestDbDao.testFetchByTableNameNull(TestDbDao.java:515)
+<br/>34 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m25"></a><h2>cn.vko.core.db.dao.impl.TestDbDao:testUpdateSingleParty</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m26"></a><h2>cn.vko.core.db.dao.impl.TestDbDao:testQueryBySqlCnd</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m27"></a><h2>cn.vko.core.db.dao.impl.TestDbDao:testExcuteNull</h2>
+<div style="padding-left:3em">
+<p>sql对象不允许为空</p>
+cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+<br/>at cn.vko.core.common.util.ExceptionUtil.checkEmpty(ExceptionUtil.java:147)
+<br/>at cn.vko.core.db.dao.impl.DbDao.excute(DbDao.java:169)
+<br/>at cn.vko.core.db.dao.impl.TestDbDao.testExcuteNull(TestDbDao.java:663)
+<br/>34 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m28"></a><h2>cn.vko.core.db.dao.impl.TestDbDao:testQueryByTableNameCndAndPagerNull</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m29"></a><h2>cn.vko.core.db.dao.impl.TestDbDao:testDeleteNull</h2>
+<div style="padding-left:3em">
+<p>要删除的对象不能为空</p>
+cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+<br/>at cn.vko.core.common.util.ExceptionUtil.checkEmpty(ExceptionUtil.java:147)
+<br/>at cn.vko.core.db.dao.impl.DbDao.delete(DbDao.java:154)
+<br/>at cn.vko.core.db.dao.impl.TestDbDao.testDeleteNull(TestDbDao.java:622)
+<br/>34 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m30"></a><h2>cn.vko.core.db.dao.impl.TestDbDao:testUpdateByTableNameTableNameNull</h2>
+<div style="padding-left:3em">
+<p>表名不能为空</p>
+cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+<br/>at cn.vko.core.common.util.ExceptionUtil.checkEmpty(ExceptionUtil.java:147)
+<br/>at cn.vko.core.db.dao.impl.DbDao.update(DbDao.java:137)
+<br/>at cn.vko.core.db.dao.impl.TestDbDao.testUpdateByTableNameTableNameNull(TestDbDao.java:492)
+<br/>34 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m31"></a><h2>cn.vko.core.db.dao.impl.TestDbDao:testQueryByClassCnd</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m32"></a><h2>cn.vko.core.db.util.TestDbSqlUtil:testQueryIntIll</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m33"></a><h2>cn.vko.core.db.util.TestDbSqlUtil:testQueryEntityPagerRecordCount</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m34"></a><h2>cn.vko.core.db.dao.impl.TestOperateDbDao:testUpdateArray</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m35"></a><h2>cn.vko.core.db.dao.impl.TestOperateDbDao:testUpdateSignle</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m36"></a><h2>cn.vko.core.db.dao.impl.TestDbDao:testInsertArrayNotSame</h2>
+<div style="padding-left:3em">
+<p>Invalid operating object &apos;cn.vko.core.db.mock.entity.MockEntityWithoutAutoId&apos; for field &apos;&apos;id&apos;(cn.vko.core.db.mock.entity.MockEntityWithAutoId)&apos;</p>
+org.nutz.lang.Lang.makeThrow(Lang.java:96)
+<br/>at org.nutz.dao.impl.entity.macro.SqlFieldMacro.setOperatingObject(SqlFieldMacro.java:40)
+<br/>at org.nutz.dao.impl.EntityOperator.addInsert(EntityOperator.java:169)
+<br/>at org.nutz.dao.impl.NutDao$1.invoke(NutDao.java:130)
+<br/>at org.nutz.lang.Lang.each(Lang.java:1362)
+<br/>at org.nutz.dao.impl.NutDao.insert(NutDao.java:128)
+<br/>at cn.vko.core.db.dao.impl.DbDao.insert(DbDao.java:99)
+<br/>at cn.vko.core.db.dao.impl.TestDbDao.testInsertArrayNotSame(TestDbDao.java:219)
+<br/>34 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m37"></a><h2>cn.vko.core.db.dao.impl.TestDbDao:testInsertTableByClassClassNull</h2>
+<div style="padding-left:3em">
+<p>class不能为空</p>
+cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+<br/>at cn.vko.core.common.util.ExceptionUtil.checkNull(ExceptionUtil.java:132)
+<br/>at cn.vko.core.db.dao.impl.DbDao.insert(DbDao.java:112)
+<br/>at cn.vko.core.db.dao.impl.TestDbDao.testInsertTableByClassClassNull(TestDbDao.java:280)
+<br/>34 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m38"></a><h2>cn.vko.core.db.dao.impl.TestDbDao:testFetchByClassByNotExistsId</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m39"></a><h2>cn.vko.core.db.util.TestDbSqlUtil:testQueryEntityPager</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m40"></a><h2>cn.vko.core.db.util.TestRecordUtil:testGetLongIll</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m41"></a><h2>cn.vko.core.db.util.TestDbSqlUtil:testQueryIntAll</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m42"></a><h2>cn.vko.core.db.dao.impl.TestDbDao:testInsertListHasNull</h2>
+<div style="padding-left:3em">
+<p>null</p>
+cn.vko.core.db.dao.impl.DbDao$1.invoke(DbDao.java:79)
+<br/>at org.nutz.lang.Lang.each(Lang.java:1373)
+<br/>at org.nutz.lang.Lang.each(Lang.java:1326)
+<br/>at cn.vko.core.db.dao.impl.DbDao.insert(DbDao.java:71)
+<br/>at cn.vko.core.db.dao.impl.TestDbDao.testInsertListHasNull(TestDbDao.java:259)
+<br/>34 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m43"></a><h2>cn.vko.core.db.dao.impl.TestDbDao:testFetchBySql</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m44"></a><h2>cn.vko.core.db.dao.impl.TestDbDao:testInsertSingleWithNotAutoIdNotHasId</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m45"></a><h2>cn.vko.core.db.dao.impl.TestDbDao:testFetchBySqlNull</h2>
+<div style="padding-left:3em">
+<p>sql不能为空</p>
+cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+<br/>at cn.vko.core.common.util.ExceptionUtil.checkEmpty(ExceptionUtil.java:147)
+<br/>at cn.vko.core.db.dao.impl.DbDao.fetch(DbDao.java:237)
+<br/>at cn.vko.core.db.dao.impl.TestDbDao.testFetchBySqlNull(TestDbDao.java:595)
+<br/>34 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m46"></a><h2>cn.vko.core.db.dao.impl.TestDbDao:testQueryByClassClazzNull</h2>
+<div style="padding-left:3em">
+<p>查询的类型不为空</p>
+cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+<br/>at cn.vko.core.common.util.ExceptionUtil.checkNull(ExceptionUtil.java:132)
+<br/>at cn.vko.core.db.dao.impl.DbDao.query(DbDao.java:176)
+<br/>at cn.vko.core.db.dao.impl.TestDbDao.testQueryByClassClazzNull(TestDbDao.java:669)
+<br/>34 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m47"></a><h2>cn.vko.core.db.dao.impl.TestOperateDbDao:testInsertArray</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m48"></a><h2>cn.vko.core.db.util.TestDbSqlUtil:testQueryIntPagerRecordCount</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m49"></a><h2>cn.vko.core.db.dao.impl.TestDbDao:testQueryByTableNameTableNameNull</h2>
+<div style="padding-left:3em">
+<p>查询的表不为空</p>
+cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+<br/>at cn.vko.core.common.util.ExceptionUtil.checkEmpty(ExceptionUtil.java:147)
+<br/>at cn.vko.core.db.dao.impl.DbDao.query(DbDao.java:183)
+<br/>at cn.vko.core.db.dao.impl.TestDbDao.testQueryByTableNameTableNameNull(TestDbDao.java:675)
+<br/>34 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m50"></a><h2>cn.vko.core.db.util.TestDbSqlUtil:testQueryIntCastIll</h2>
+<div style="padding-left:3em">
+<p>org.nutz.dao.DaoException: !Nutz SQL Error: &apos;select name from mock_entity_4_extend_query&apos;
+PreparedStatement: 
+&apos;select name from mock_entity_4_extend_query&apos;</p>
+org.nutz.dao.impl.sql.run.NutDaoRunner.run(NutDaoRunner.java:76)
+<br/>at org.nutz.dao.impl.DaoSupport._exec(DaoSupport.java:199)
+<br/>at org.nutz.dao.impl.DaoSupport.execute(DaoSupport.java:177)
+<br/>at cn.vko.core.db.dao.impl.DbDao.excute(DbDao.java:170)
+<br/>at cn.vko.core.db.util.DbSqlUtil.getResult(DbSqlUtil.java:186)
+<br/>at cn.vko.core.db.util.DbSqlUtil.queryInt(DbSqlUtil.java:252)
+<br/>at cn.vko.core.db.util.DbSqlUtil.queryInt(DbSqlUtil.java:242)
+<br/>at cn.vko.core.db.util.DbSqlUtil.queryInt(DbSqlUtil.java:232)
+<br/>at cn.vko.core.db.util.TestDbSqlUtil.testQueryIntCastIll(TestDbSqlUtil.java:166)
+<br/>34 lines not shown
+<p>Caused by !Nutz SQL Error: &apos;select name from mock_entity_4_extend_query&apos;
+PreparedStatement: 
+&apos;select name from mock_entity_4_extend_query&apos;</p>
+org.nutz.dao.impl.sql.run.NutDaoExecutor.exec(NutDaoExecutor.java:90)
+<br/>at org.nutz.dao.impl.DaoSupport$DaoExec.invoke(DaoSupport.java:244)
+<br/>at org.nutz.dao.impl.sql.run.NutDaoRunner.run(NutDaoRunner.java:64)
+<br/>at org.nutz.dao.impl.DaoSupport._exec(DaoSupport.java:199)
+<br/>at org.nutz.dao.impl.DaoSupport.execute(DaoSupport.java:177)
+<br/>at cn.vko.core.db.dao.impl.DbDao.excute(DbDao.java:170)
+<br/>at cn.vko.core.db.util.DbSqlUtil.getResult(DbSqlUtil.java:186)
+<br/>at cn.vko.core.db.util.DbSqlUtil.queryInt(DbSqlUtil.java:252)
+<br/>at cn.vko.core.db.util.DbSqlUtil.queryInt(DbSqlUtil.java:242)
+<br/>at cn.vko.core.db.util.DbSqlUtil.queryInt(DbSqlUtil.java:232)
+<br/>at cn.vko.core.db.util.TestDbSqlUtil.testQueryIntCastIll(TestDbSqlUtil.java:166)
+<br/>34 lines not shown
+<p>Caused by Data conversion error converting &quot;测试0&quot; [90021-140]</p>
+org.h2.message.DbException.getJdbcSQLException(DbException.java:327)
+<br/>at org.h2.message.DbException.get(DbException.java:156)
+<br/>at org.h2.value.Value.convertTo(Value.java:791)
+<br/>at org.h2.value.Value.getInt(Value.java:419)
+<br/>at org.h2.jdbc.JdbcResultSet.getInt(JdbcResultSet.java:299)
+<br/>at org.nutz.dao.impl.sql.callback.QueryIntCallback.invoke(QueryIntCallback.java:21)
+<br/>at org.nutz.dao.impl.sql.NutSql.onAfter(NutSql.java:212)
+<br/>at org.nutz.dao.impl.sql.run.NutDaoExecutor._runSelect(NutDaoExecutor.java:225)
+<br/>at org.nutz.dao.impl.sql.run.NutDaoExecutor.exec(NutDaoExecutor.java:43)
+<br/>at org.nutz.dao.impl.DaoSupport$DaoExec.invoke(DaoSupport.java:244)
+<br/>at org.nutz.dao.impl.sql.run.NutDaoRunner.run(NutDaoRunner.java:64)
+<br/>at org.nutz.dao.impl.DaoSupport._exec(DaoSupport.java:199)
+<br/>at org.nutz.dao.impl.DaoSupport.execute(DaoSupport.java:177)
+<br/>at cn.vko.core.db.dao.impl.DbDao.excute(DbDao.java:170)
+<br/>at cn.vko.core.db.util.DbSqlUtil.getResult(DbSqlUtil.java:186)
+<br/>at cn.vko.core.db.util.DbSqlUtil.queryInt(DbSqlUtil.java:252)
+<br/>at cn.vko.core.db.util.DbSqlUtil.queryInt(DbSqlUtil.java:242)
+<br/>at cn.vko.core.db.util.DbSqlUtil.queryInt(DbSqlUtil.java:232)
+<br/>at cn.vko.core.db.util.TestDbSqlUtil.testQueryIntCastIll(TestDbSqlUtil.java:166)
+<br/>34 lines not shown
+<p>Caused by For input string: &quot;测试0&quot;</p>
+java.lang.NumberFormatException.forInputString(NumberFormatException.java:48)
+<br/>at java.lang.Integer.parseInt(Integer.java:449)
+<br/>at java.lang.Integer.valueOf(Integer.java:528)
+<br/>at java.lang.Integer.decode(Integer.java:958)
+<br/>at org.h2.value.Value.convertTo(Value.java:748)
+<br/>at org.h2.value.Value.getInt(Value.java:419)
+<br/>at org.h2.jdbc.JdbcResultSet.getInt(JdbcResultSet.java:299)
+<br/>at org.nutz.dao.impl.sql.callback.QueryIntCallback.invoke(QueryIntCallback.java:21)
+<br/>at org.nutz.dao.impl.sql.NutSql.onAfter(NutSql.java:212)
+<br/>at org.nutz.dao.impl.sql.run.NutDaoExecutor._runSelect(NutDaoExecutor.java:225)
+<br/>at org.nutz.dao.impl.sql.run.NutDaoExecutor.exec(NutDaoExecutor.java:43)
+<br/>at org.nutz.dao.impl.DaoSupport$DaoExec.invoke(DaoSupport.java:244)
+<br/>at org.nutz.dao.impl.sql.run.NutDaoRunner.run(NutDaoRunner.java:64)
+<br/>at org.nutz.dao.impl.DaoSupport._exec(DaoSupport.java:199)
+<br/>at org.nutz.dao.impl.DaoSupport.execute(DaoSupport.java:177)
+<br/>at cn.vko.core.db.dao.impl.DbDao.excute(DbDao.java:170)
+<br/>at cn.vko.core.db.util.DbSqlUtil.getResult(DbSqlUtil.java:186)
+<br/>at cn.vko.core.db.util.DbSqlUtil.queryInt(DbSqlUtil.java:252)
+<br/>at cn.vko.core.db.util.DbSqlUtil.queryInt(DbSqlUtil.java:242)
+<br/>at cn.vko.core.db.util.DbSqlUtil.queryInt(DbSqlUtil.java:232)
+<br/>at cn.vko.core.db.util.TestDbSqlUtil.testQueryIntCastIll(TestDbSqlUtil.java:166)
+<br/>34 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m51"></a><h2>cn.vko.core.db.dao.impl.TestOperateDbDao:testInsertCollection</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m52"></a><h2>cn.vko.core.db.dao.impl.TestDbDao:testInsertSingleWithoutIdNotHasId</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m53"></a><h2>cn.vko.core.db.dao.impl.TestDbDao:testUpdateByClassTableNameNull</h2>
+<div style="padding-left:3em">
+<p>类型不能为空</p>
+cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+<br/>at cn.vko.core.common.util.ExceptionUtil.checkNull(ExceptionUtil.java:132)
+<br/>at cn.vko.core.db.dao.impl.DbDao.update(DbDao.java:146)
+<br/>at cn.vko.core.db.dao.impl.TestDbDao.testUpdateByClassTableNameNull(TestDbDao.java:498)
+<br/>34 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m54"></a><h2>cn.vko.core.db.dao.impl.TestDbDao:testInsertTableByTableNameTabelNameNull</h2>
+<div style="padding-left:3em">
+<p>tableName不能为空</p>
+cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+<br/>at cn.vko.core.common.util.ExceptionUtil.checkEmpty(ExceptionUtil.java:147)
+<br/>at cn.vko.core.db.dao.impl.DbDao.insert(DbDao.java:105)
+<br/>at cn.vko.core.db.dao.impl.TestDbDao.testInsertTableByTableNameTabelNameNull(TestDbDao.java:297)
+<br/>34 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m55"></a><h2>cn.vko.core.db.dao.impl.TestDbDao:testUpdateArrayParty</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m56"></a><h2>cn.vko.core.db.dao.impl.TestDbDao:testInsertArray</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m57"></a><h2>cn.vko.core.db.util.TestDbExendUtil:testCountCnd</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m58"></a><h2>cn.vko.core.db.dao.impl.TestDbDao:testFetchByTableNameByCnd</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m59"></a><h2>cn.vko.core.db.util.TestRecordUtil:testGetBooleanIll</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m60"></a><h2>cn.vko.core.db.dao.impl.TestDbDao:testQueryByTableName</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m61"></a><h2>cn.vko.core.db.dao.impl.TestDbDao:testFetchByTableNameById</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m62"></a><h2>cn.vko.core.db.dao.impl.TestDbDao:testInsertTableByClassChainNull</h2>
+<div style="padding-left:3em">
+<p>chain不能为空</p>
+cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+<br/>at cn.vko.core.common.util.ExceptionUtil.checkNull(ExceptionUtil.java:132)
+<br/>at cn.vko.core.db.dao.impl.DbDao.insert(DbDao.java:113)
+<br/>at cn.vko.core.db.dao.impl.TestDbDao.testInsertTableByClassChainNull(TestDbDao.java:285)
+<br/>34 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m63"></a><h2>cn.vko.core.db.dao.impl.TestDbDao:testUpdateWithoutIdParty</h2>
+<div style="padding-left:3em">
+<p>Don&apos;t know how to make fetch key cn.vko.core.db.mock.entity.MockEntityWithoutId:&apos;MockEntityWithoutId(id=0, name=测试)&apos;</p>
+org.nutz.lang.Lang.makeThrow(Lang.java:96)
+<br/>at org.nutz.dao.util.Pojos$Items.cndAuto(Pojos.java:145)
+<br/>at org.nutz.dao.impl.EntityOperator.addUpdate(EntityOperator.java:74)
+<br/>at org.nutz.dao.impl.EntityOperator.addUpdate(EntityOperator.java:56)
+<br/>at org.nutz.dao.impl.NutDao.update(NutDao.java:210)
+<br/>at org.nutz.dao.impl.NutDao$2.run(NutDao.java:225)
+<br/>at org.nutz.dao.FieldFilter.run(FieldFilter.java:285)
+<br/>at org.nutz.dao.impl.NutDao.update(NutDao.java:228)
+<br/>at cn.vko.core.db.dao.impl.DbDao.update(DbDao.java:131)
+<br/>at cn.vko.core.db.dao.impl.TestDbDao.testUpdateWithoutIdParty(TestDbDao.java:324)
+<br/>34 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m64"></a><h2>cn.vko.core.db.util.TestDbSqlUtil:testQueryEntity</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m65"></a><h2>cn.vko.core.db.dao.impl.TestDbDao:testQueryBySql</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m66"></a><h2>cn.vko.core.db.dao.impl.TestDbDao:testUpdateSingleAll</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m67"></a><h2>cn.vko.core.db.dao.impl.TestDbDao:testQueryByTableNameCnd</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m68"></a><h2>cn.vko.core.db.dao.impl.TestDbDao:testFetchByTableNameByNotExistsId</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m69"></a><h2>cn.vko.core.db.dao.impl.TestDbDao:testInsertTableByClass</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m70"></a><h2>cn.vko.core.db.dao.impl.TestDbDao:testDeleteNormal</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m71"></a><h2>cn.vko.core.db.dao.impl.TestDbDao:testInsertList</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m72"></a><h2>cn.vko.core.db.dao.impl.TestDbDao:testUpdateMap</h2>
+<div style="padding-left:3em">
+<p>更新的对象不允许为空</p>
+cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+<br/>at cn.vko.core.common.util.ExceptionUtil.checkEmpty(ExceptionUtil.java:147)
+<br/>at cn.vko.core.db.dao.impl.DbDao.update(DbDao.java:119)
+<br/>at cn.vko.core.db.dao.impl.TestDbDao.testUpdateMap(TestDbDao.java:503)
+<br/>34 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m73"></a><h2>cn.vko.core.db.dao.impl.TestDbDao:testQueryByClass</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m74"></a><h2>cn.vko.core.db.dao.impl.TestOperateDbDao:testInsertNull</h2>
+<div style="padding-left:3em">
+<p>插入的数据不为空</p>
+cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+<br/>at cn.vko.core.common.util.ExceptionUtil.checkEmpty(ExceptionUtil.java:147)
+<br/>at cn.vko.core.db.dao.impl.OperateDbDao.insert(OperateDbDao.java:65)
+<br/>at cn.vko.core.db.dao.impl.TestOperateDbDao.testInsertNull(TestOperateDbDao.java:79)
+<br/>34 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m75"></a><h2>cn.vko.core.db.dao.impl.TestDbDao:testInsertMap</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m76"></a><h2>cn.vko.core.db.dao.impl.TestDbDao:testUpdateObjNull</h2>
+<div style="padding-left:3em">
+<p>更新的对象不允许为空</p>
+cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+<br/>at cn.vko.core.common.util.ExceptionUtil.checkEmpty(ExceptionUtil.java:147)
+<br/>at cn.vko.core.db.dao.impl.DbDao.update(DbDao.java:119)
+<br/>at cn.vko.core.db.dao.impl.TestDbDao.testUpdateObjNull(TestDbDao.java:312)
+<br/>34 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m77"></a><h2>cn.vko.core.db.dao.impl.TestDbDao:testInsertMapNull</h2>
+<div style="padding-left:3em">
+<p>插入的数据不为空</p>
+cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+<br/>at cn.vko.core.common.util.ExceptionUtil.checkEmpty(ExceptionUtil.java:147)
+<br/>at cn.vko.core.db.dao.impl.DbDao.insert(DbDao.java:69)
+<br/>at cn.vko.core.db.dao.impl.TestDbDao.testInsertMapNull(TestDbDao.java:109)
+<br/>34 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m78"></a><h2>cn.vko.core.db.util.TestDbSqlUtil:testFetchEntity</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m79"></a><h2>cn.vko.core.db.dao.impl.TestDbDao:testFetchByIdNotHasId</h2>
+<div style="padding-left:3em">
+<p>Need @Id for class cn.vko.core.db.mock.entity.MockEntityWithoutId</p>
+org.nutz.dao.impl.NutDao.fetch(NutDao.java:456)
+<br/>at cn.vko.core.db.dao.impl.DbDao.fetch(DbDao.java:209)
+<br/>at cn.vko.core.db.dao.impl.TestDbDao.testFetchByIdNotHasId(TestDbDao.java:521)
+<br/>34 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m80"></a><h2>cn.vko.core.db.dao.impl.TestOperateDbDao:testInsertMap</h2>
+<div style="padding-left:3em">
+<p>插入的数据不为空</p>
+cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+<br/>at cn.vko.core.common.util.ExceptionUtil.checkEmpty(ExceptionUtil.java:147)
+<br/>at cn.vko.core.db.dao.impl.OperateDbDao.insert(OperateDbDao.java:65)
+<br/>at cn.vko.core.db.dao.impl.TestOperateDbDao.testInsertMap(TestOperateDbDao.java:133)
+<br/>34 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m81"></a><h2>cn.vko.core.db.dao.impl.TestDbDao:testFetchByClassById</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m82"></a><h2>cn.vko.core.db.dao.impl.TestOperateDbDao:testUpdateCollection</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m83"></a><h2>cn.vko.core.db.dao.impl.TestDbDao:testInsertSingleWithAutoIdNotHasId</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m84"></a><h2>cn.vko.core.db.util.TestDbSqlUtil:testFetchSignleNormal</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m85"></a><h2>cn.vko.core.db.util.TestDbExendUtil:testAbleMulipt</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m86"></a><h2>cn.vko.core.db.util.TestRecordUtil:testGetDoubleIll</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m87"></a><h2>cn.vko.core.db.util.TestEntityUtil:testGetTableName</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m88"></a><h2>cn.vko.core.db.dao.impl.TestDbDao:testInsertArrayHasNull</h2>
+<div style="padding-left:3em">
+<p>null</p>
+cn.vko.core.db.dao.impl.DbDao$1.invoke(DbDao.java:79)
+<br/>at org.nutz.lang.Lang.each(Lang.java:1362)
+<br/>at org.nutz.lang.Lang.each(Lang.java:1326)
+<br/>at cn.vko.core.db.dao.impl.DbDao.insert(DbDao.java:71)
+<br/>at cn.vko.core.db.dao.impl.TestDbDao.testInsertArrayHasNull(TestDbDao.java:246)
+<br/>34 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m89"></a><h2>cn.vko.core.db.util.TestDbExendUtil:testDisableStatus</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m90"></a><h2>cn.vko.core.db.dao.impl.TestOperateDbDao:testInsertSignle</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m91"></a><h2>cn.vko.core.db.dao.impl.TestOperateDbDao:testInsertWithUserId</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m92"></a><h2>cn.vko.core.db.dao.impl.TestDbDao:testInsertNull</h2>
+<div style="padding-left:3em">
+<p>插入的数据不为空</p>
+cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+<br/>at cn.vko.core.common.util.ExceptionUtil.checkEmpty(ExceptionUtil.java:147)
+<br/>at cn.vko.core.db.dao.impl.DbDao.insert(DbDao.java:69)
+<br/>at cn.vko.core.db.dao.impl.TestDbDao.testInsertNull(TestDbDao.java:94)
+<br/>34 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m93"></a><h2>cn.vko.core.db.dao.impl.TestDbDao:testFetchByCndNotHasId</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m94"></a><h2>cn.vko.core.db.dao.impl.TestOperateDbDao:testUpdateNull</h2>
+<div style="padding-left:3em">
+<p>插入的数据不为空</p>
+cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+<br/>at cn.vko.core.common.util.ExceptionUtil.checkEmpty(ExceptionUtil.java:147)
+<br/>at cn.vko.core.db.dao.impl.OperateDbDao.update(OperateDbDao.java:184)
+<br/>at cn.vko.core.db.dao.impl.TestOperateDbDao.testUpdateNull(TestOperateDbDao.java:138)
+<br/>34 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m95"></a><h2>cn.vko.core.db.util.TestDbSqlUtil:testQueryEntityIll</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m96"></a><h2>cn.vko.core.db.util.TestDbSqlUtil:testFetchIntIll</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m97"></a><h2>cn.vko.core.db.util.TestRecordUtil:testGetBoolean</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m98"></a><h2>cn.vko.core.db.util.TestEntityUtil:testEName2TName</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m99"></a><h2>cn.vko.core.db.dao.impl.TestDbDao:testInsertArrayNull</h2>
+<div style="padding-left:3em">
+<p>插入的数据不为空</p>
+cn.vko.core.common.util.ExceptionUtil.pEx(ExceptionUtil.java:103)
+<br/>at cn.vko.core.common.util.ExceptionUtil.checkEmpty(ExceptionUtil.java:147)
+<br/>at cn.vko.core.db.dao.impl.DbDao.insert(DbDao.java:69)
+<br/>at cn.vko.core.db.dao.impl.TestDbDao.testInsertArrayNull(TestDbDao.java:99)
+<br/>34 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m100"></a><h2>cn.vko.core.db.util.TestRecordUtil:testGetLong</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m101"></a><h2>cn.vko.core.db.dao.impl.TestDbDao:testUpdateListAll</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m102"></a><h2>cn.vko.core.db.dao.impl.TestDbDao:testInsertTableByTableName</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m103"></a><h2>cn.vko.core.db.dao.impl.TestDbDao:testDeleteWithoutId</h2>
+<div style="padding-left:3em">
+<p>Don&apos;t know how to make fetch key cn.vko.core.db.mock.entity.MockEntityWithoutId:&apos;MockEntityWithoutId(id=0, name=测试)&apos;</p>
+org.nutz.lang.Lang.makeThrow(Lang.java:96)
+<br/>at org.nutz.dao.util.Pojos$Items.cndAuto(Pojos.java:145)
+<br/>at org.nutz.dao.impl.EntityOperator.addDeleteSelfOnly(EntityOperator.java:145)
+<br/>at org.nutz.dao.impl.NutDao.delete(NutDao.java:342)
+<br/>at cn.vko.core.db.dao.impl.DbDao.delete(DbDao.java:158)
+<br/>at cn.vko.core.db.dao.impl.TestDbDao.testDeleteWithoutId(TestDbDao.java:634)
+<br/>34 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m104"></a><h2>cn.vko.core.db.dao.impl.TestDbDao:testInsertSingleWithAutoIdHasId</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m105"></a><h2>cn.vko.core.db.util.TestRecordUtil:testGetDouble</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

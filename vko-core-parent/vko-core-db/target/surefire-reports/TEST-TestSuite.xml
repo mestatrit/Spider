@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="0" time="1.274" errors="0" skipped="0" tests="105" name="TestSuite">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="D:\work\Java\jdk1.6.0_45\jre\bin"/>
+    <property name="java.vm.version" value="20.45-b01"/>
+    <property name="java.vm.vendor" value="Sun Microsystems Inc."/>
+    <property name="java.vendor.url" value="http://java.sun.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="D:\work\workspace\vko-core-parent"/>
+    <property name="java.runtime.version" value="1.6.0_45-b06"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="D:\work\Java\jdk1.6.0_45\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\ADMINI~1\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc."/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="classworlds.conf" value="D:\work\workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf4661628799648320328.tmp"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.library.path" value="D:\work\Java\jdk1.6.0_45\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:/work/Java/jdk1.6.0_45/bin/../jre/bin/server;D:/work/Java/jdk1.6.0_45/bin/../jre/bin;D:/work/Java/jdk1.6.0_45/bin/../jre/lib/amd64;D:\work\Java\jdk1.6.0_45\bin;D:\work\apache-maven-3.2.1\bin;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;D:\work\nodejs\;C:\Program Files (x86)\IDM Computer Solutions\UltraEdit\;D:\vpnn\OpenVPN\bin;C:\Users\Administrator\AppData\Roaming\npm;D:\work\eclipse;;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="50.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.1"/>
+    <property name="user.home" value="C:\Users\Administrator"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="1.6"/>
+    <property name="user.name" value="Administrator"/>
+    <property name="java.class.path" value="D:\work\apache-maven-3.2.1\boot\plexus-classworlds-2.5.1.jar"/>
+    <property name="org.slf4j.simpleLogger.defaultLogLevel" value="info"/>
+    <property name="java.vm.specification.version" value="1.0"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="D:\work\Java\jdk1.6.0_45\jre"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -B -s D:\work\apache-maven-3.2.1\conf\settings.xml install"/>
+    <property name="java.specification.vendor" value="Sun Microsystems Inc."/>
+    <property name="user.language" value="zh"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.6.0_45"/>
+    <property name="java.ext.dirs" value="D:\work\Java\jdk1.6.0_45\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="D:\work\Java\jdk1.6.0_45\jre\lib\resources.jar;D:\work\Java\jdk1.6.0_45\jre\lib\rt.jar;D:\work\Java\jdk1.6.0_45\jre\lib\sunrsasign.jar;D:\work\Java\jdk1.6.0_45\jre\lib\jsse.jar;D:\work\Java\jdk1.6.0_45\jre\lib\jce.jar;D:\work\Java\jdk1.6.0_45\jre\lib\charsets.jar;D:\work\Java\jdk1.6.0_45\jre\lib\modules\jdk.boot.jar;D:\work\Java\jdk1.6.0_45\jre\classes"/>
+    <property name="java.vendor" value="Sun Microsystems Inc."/>
+    <property name="maven.home" value="D:\work\apache-maven-3.2.1"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi"/>
+    <property name="maven.bootclasspath" value="D:\work\apache-maven-3.2.1\boot\plexus-classworlds-2.5.1.jar"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase time="0.007" classname="cn.vko.core.db.dao.impl.TestDbDao" name="testDeleteByIdNormal"/>
+  <testcase time="0.001" classname="cn.vko.core.db.dao.impl.TestDbDao" name="testDeleteByIdNull"/>
+  <testcase time="0.002" classname="cn.vko.core.db.dao.impl.TestDbDao" name="testDeleteNormal"/>
+  <testcase time="0" classname="cn.vko.core.db.dao.impl.TestDbDao" name="testDeleteNull"/>
+  <testcase time="0.001" classname="cn.vko.core.db.dao.impl.TestDbDao" name="testDeleteWithoutId"/>
+  <testcase time="0" classname="cn.vko.core.db.dao.impl.TestDbDao" name="testExcuteNull"/>
+  <testcase time="0.005" classname="cn.vko.core.db.dao.impl.TestDbDao" name="testFetchByClassByCnd"/>
+  <testcase time="0.001" classname="cn.vko.core.db.dao.impl.TestDbDao" name="testFetchByClassById"/>
+  <testcase time="0.001" classname="cn.vko.core.db.dao.impl.TestDbDao" name="testFetchByClassByNotExistsId"/>
+  <testcase time="0" classname="cn.vko.core.db.dao.impl.TestDbDao" name="testFetchByClassNull"/>
+  <testcase time="0.001" classname="cn.vko.core.db.dao.impl.TestDbDao" name="testFetchByCndNotHasId"/>
+  <testcase time="0" classname="cn.vko.core.db.dao.impl.TestDbDao" name="testFetchByIdNotHasId"/>
+  <testcase time="0.002" classname="cn.vko.core.db.dao.impl.TestDbDao" name="testFetchBySql"/>
+  <testcase time="0" classname="cn.vko.core.db.dao.impl.TestDbDao" name="testFetchBySqlNotExists"/>
+  <testcase time="0" classname="cn.vko.core.db.dao.impl.TestDbDao" name="testFetchBySqlNull"/>
+  <testcase time="0.001" classname="cn.vko.core.db.dao.impl.TestDbDao" name="testFetchByTableNameByCnd"/>
+  <testcase time="0.001" classname="cn.vko.core.db.dao.impl.TestDbDao" name="testFetchByTableNameById"/>
+  <testcase time="0.001" classname="cn.vko.core.db.dao.impl.TestDbDao" name="testFetchByTableNameByNotExistsId"/>
+  <testcase time="0" classname="cn.vko.core.db.dao.impl.TestDbDao" name="testFetchByTableNameNull"/>
+  <testcase time="0.001" classname="cn.vko.core.db.dao.impl.TestDbDao" name="testInsertArray"/>
+  <testcase time="0.001" classname="cn.vko.core.db.dao.impl.TestDbDao" name="testInsertArrayHasNull"/>
+  <testcase time="0.001" classname="cn.vko.core.db.dao.impl.TestDbDao" name="testInsertArrayNotSame"/>
+  <testcase time="0" classname="cn.vko.core.db.dao.impl.TestDbDao" name="testInsertArrayNull"/>
+  <testcase time="0" classname="cn.vko.core.db.dao.impl.TestDbDao" name="testInsertCollectionNull"/>
+  <testcase time="0.001" classname="cn.vko.core.db.dao.impl.TestDbDao" name="testInsertList"/>
+  <testcase time="0.001" classname="cn.vko.core.db.dao.impl.TestDbDao" name="testInsertListHasNull"/>
+  <testcase time="0.002" classname="cn.vko.core.db.dao.impl.TestDbDao" name="testInsertMap"/>
+  <testcase time="0" classname="cn.vko.core.db.dao.impl.TestDbDao" name="testInsertMapNull"/>
+  <testcase time="0" classname="cn.vko.core.db.dao.impl.TestDbDao" name="testInsertNull"/>
+  <testcase time="0.001" classname="cn.vko.core.db.dao.impl.TestDbDao" name="testInsertSingleWithAutoIdHasId"/>
+  <testcase time="0" classname="cn.vko.core.db.dao.impl.TestDbDao" name="testInsertSingleWithAutoIdNotHasId"/>
+  <testcase time="0" classname="cn.vko.core.db.dao.impl.TestDbDao" name="testInsertSingleWithNotAutoIdNotHasId"/>
+  <testcase time="0.001" classname="cn.vko.core.db.dao.impl.TestDbDao" name="testInsertSingleWithoutIdNotHasId"/>
+  <testcase time="0.001" classname="cn.vko.core.db.dao.impl.TestDbDao" name="testInsertTableByClass"/>
+  <testcase time="0" classname="cn.vko.core.db.dao.impl.TestDbDao" name="testInsertTableByClassChainNull"/>
+  <testcase time="0" classname="cn.vko.core.db.dao.impl.TestDbDao" name="testInsertTableByClassClassNull"/>
+  <testcase time="0" classname="cn.vko.core.db.dao.impl.TestDbDao" name="testInsertTableByTableName"/>
+  <testcase time="0" classname="cn.vko.core.db.dao.impl.TestDbDao" name="testInsertTableByTableNameChainNull"/>
+  <testcase time="0" classname="cn.vko.core.db.dao.impl.TestDbDao" name="testInsertTableByTableNameTabelNameNull"/>
+  <testcase time="0.001" classname="cn.vko.core.db.dao.impl.TestDbDao" name="testInsertWithOutAutoHasId"/>
+  <testcase time="0.002" classname="cn.vko.core.db.dao.impl.TestDbDao" name="testQueryByClass"/>
+  <testcase time="0" classname="cn.vko.core.db.dao.impl.TestDbDao" name="testQueryByClassClazzNull"/>
+  <testcase time="0.001" classname="cn.vko.core.db.dao.impl.TestDbDao" name="testQueryByClassCnd"/>
+  <testcase time="0.003" classname="cn.vko.core.db.dao.impl.TestDbDao" name="testQueryByClassCndAndPagerNull"/>
+  <testcase time="0.002" classname="cn.vko.core.db.dao.impl.TestDbDao" name="testQueryBySql"/>
+  <testcase time="0.001" classname="cn.vko.core.db.dao.impl.TestDbDao" name="testQueryBySqlCnd"/>
+  <testcase time="0.002" classname="cn.vko.core.db.dao.impl.TestDbDao" name="testQueryBySqlCndAndPagerNull"/>
+  <testcase time="0" classname="cn.vko.core.db.dao.impl.TestDbDao" name="testQueryBySqlSqlNull"/>
+  <testcase time="0.001" classname="cn.vko.core.db.dao.impl.TestDbDao" name="testQueryByTableName"/>
+  <testcase time="0" classname="cn.vko.core.db.dao.impl.TestDbDao" name="testQueryByTableNameCnd"/>
+  <testcase time="0.003" classname="cn.vko.core.db.dao.impl.TestDbDao" name="testQueryByTableNameCndAndPagerNull"/>
+  <testcase time="0" classname="cn.vko.core.db.dao.impl.TestDbDao" name="testQueryByTableNameTableNameNull"/>
+  <testcase time="0.003" classname="cn.vko.core.db.dao.impl.TestDbDao" name="testUpdateArrayAll"/>
+  <testcase time="0.002" classname="cn.vko.core.db.dao.impl.TestDbDao" name="testUpdateArrayParty"/>
+  <testcase time="0" classname="cn.vko.core.db.dao.impl.TestDbDao" name="testUpdateByClassTableNameNull"/>
+  <testcase time="0" classname="cn.vko.core.db.dao.impl.TestDbDao" name="testUpdateByTableNameTableNameNull"/>
+  <testcase time="0.002" classname="cn.vko.core.db.dao.impl.TestDbDao" name="testUpdateListAll"/>
+  <testcase time="0.002" classname="cn.vko.core.db.dao.impl.TestDbDao" name="testUpdateListParty"/>
+  <testcase time="0" classname="cn.vko.core.db.dao.impl.TestDbDao" name="testUpdateMap"/>
+  <testcase time="0" classname="cn.vko.core.db.dao.impl.TestDbDao" name="testUpdateObjNull"/>
+  <testcase time="0.001" classname="cn.vko.core.db.dao.impl.TestDbDao" name="testUpdateSingleAll"/>
+  <testcase time="0.002" classname="cn.vko.core.db.dao.impl.TestDbDao" name="testUpdateSingleParty"/>
+  <testcase time="0" classname="cn.vko.core.db.dao.impl.TestDbDao" name="testUpdateWithoutId"/>
+  <testcase time="0.001" classname="cn.vko.core.db.dao.impl.TestDbDao" name="testUpdateWithoutIdParty"/>
+  <testcase time="0.004" classname="cn.vko.core.db.dao.impl.TestOperateDbDao" name="testInsertArray"/>
+  <testcase time="0.001" classname="cn.vko.core.db.dao.impl.TestOperateDbDao" name="testInsertCollection"/>
+  <testcase time="0.001" classname="cn.vko.core.db.dao.impl.TestOperateDbDao" name="testInsertMap"/>
+  <testcase time="0" classname="cn.vko.core.db.dao.impl.TestOperateDbDao" name="testInsertNull"/>
+  <testcase time="0.001" classname="cn.vko.core.db.dao.impl.TestOperateDbDao" name="testInsertSignle"/>
+  <testcase time="0.001" classname="cn.vko.core.db.dao.impl.TestOperateDbDao" name="testInsertWithUserId"/>
+  <testcase time="0.003" classname="cn.vko.core.db.dao.impl.TestOperateDbDao" name="testUpdateArray"/>
+  <testcase time="0.002" classname="cn.vko.core.db.dao.impl.TestOperateDbDao" name="testUpdateCollection"/>
+  <testcase time="0" classname="cn.vko.core.db.dao.impl.TestOperateDbDao" name="testUpdateMap"/>
+  <testcase time="0" classname="cn.vko.core.db.dao.impl.TestOperateDbDao" name="testUpdateNull"/>
+  <testcase time="0.002" classname="cn.vko.core.db.dao.impl.TestOperateDbDao" name="testUpdateSignle"/>
+  <testcase time="0.006" classname="cn.vko.core.db.util.TestDbExendUtil" name="testAbleMulipt"/>
+  <testcase time="0.002" classname="cn.vko.core.db.util.TestDbExendUtil" name="testAbleSignleNoral"/>
+  <testcase time="0.001" classname="cn.vko.core.db.util.TestDbExendUtil" name="testCount"/>
+  <testcase time="0.002" classname="cn.vko.core.db.util.TestDbExendUtil" name="testCountCnd"/>
+  <testcase time="0" classname="cn.vko.core.db.util.TestDbExendUtil" name="testCountNull"/>
+  <testcase time="0.001" classname="cn.vko.core.db.util.TestDbExendUtil" name="testDisableStatus"/>
+  <testcase time="0.001" classname="cn.vko.core.db.util.TestDbExendUtil" name="testEnableStatus"/>
+  <testcase time="0.002" classname="cn.vko.core.db.util.TestDbSqlUtil" name="testFetchEntity"/>
+  <testcase time="0" classname="cn.vko.core.db.util.TestDbSqlUtil" name="testFetchIntIll"/>
+  <testcase time="0.001" classname="cn.vko.core.db.util.TestDbSqlUtil" name="testFetchLongIll"/>
+  <testcase time="0.003" classname="cn.vko.core.db.util.TestDbSqlUtil" name="testFetchSignleNormal"/>
+  <testcase time="0.001" classname="cn.vko.core.db.util.TestDbSqlUtil" name="testFetchStringIll"/>
+  <testcase time="0.01" classname="cn.vko.core.db.util.TestDbSqlUtil" name="testQueryEntity"/>
+  <testcase time="0.01" classname="cn.vko.core.db.util.TestDbSqlUtil" name="testQueryEntityIll"/>
+  <testcase time="0.002" classname="cn.vko.core.db.util.TestDbSqlUtil" name="testQueryEntityPager"/>
+  <testcase time="0.003" classname="cn.vko.core.db.util.TestDbSqlUtil" name="testQueryEntityPagerRecordCount"/>
+  <testcase time="0.001" classname="cn.vko.core.db.util.TestDbSqlUtil" name="testQueryIntAll"/>
+  <testcase time="0.001" classname="cn.vko.core.db.util.TestDbSqlUtil" name="testQueryIntCastIll"/>
+  <testcase time="0" classname="cn.vko.core.db.util.TestDbSqlUtil" name="testQueryIntIll"/>
+  <testcase time="0.001" classname="cn.vko.core.db.util.TestDbSqlUtil" name="testQueryIntPager"/>
+  <testcase time="0" classname="cn.vko.core.db.util.TestDbSqlUtil" name="testQueryIntPagerRecordCount"/>
+  <testcase time="0.001" classname="cn.vko.core.db.util.TestEntityUtil" name="testEName2TName"/>
+  <testcase time="0" classname="cn.vko.core.db.util.TestEntityUtil" name="testGetTableName"/>
+  <testcase time="0" classname="cn.vko.core.db.util.TestRecordUtil" name="testGetBoolean"/>
+  <testcase time="0" classname="cn.vko.core.db.util.TestRecordUtil" name="testGetBooleanIll"/>
+  <testcase time="0" classname="cn.vko.core.db.util.TestRecordUtil" name="testGetDateIll"/>
+  <testcase time="0.001" classname="cn.vko.core.db.util.TestRecordUtil" name="testGetDouble"/>
+  <testcase time="0" classname="cn.vko.core.db.util.TestRecordUtil" name="testGetDoubleIll"/>
+  <testcase time="0" classname="cn.vko.core.db.util.TestRecordUtil" name="testGetLong"/>
+  <testcase time="0" classname="cn.vko.core.db.util.TestRecordUtil" name="testGetLongIll"/>
+</testsuite>

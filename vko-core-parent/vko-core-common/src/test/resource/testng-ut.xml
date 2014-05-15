@@ -1,0 +1,29 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite  name="Suite" parallel="false">
+  <test name="Test">
+    <classes>
+      <class name="cn.vko.common.util.TestArrayUtil"/>
+      <class name="cn.vko.common.util.TestBeanUtil"/>
+      <class name="cn.vko.common.util.TestCollectionUtil"/>
+      <class name="cn.vko.common.util.TestConvertUtil"/>
+      <class name="cn.vko.common.util.TestDateTimeUtil"/>
+      <class name="cn.vko.common.util.TestEncodeUtil"/>
+      <class name="cn.vko.common.util.TestEncryptUtil"/>
+      <class name="cn.vko.common.util.TestEnumUtil"/>
+      <class name="cn.vko.common.util.TestExceptionUtil"/>
+      <class name="cn.vko.common.util.TestHtmlUtil"/>
+      <class name="cn.vko.common.util.TestImageUtil"/>
+      <class name="cn.vko.common.util.TestIocUtil"/>
+      <class name="cn.vko.common.util.TestIpUtil"/>
+      <class name="cn.vko.common.util.TestJsonUtil"/>
+      <class name="cn.vko.common.util.TestMapUtil"/>
+      <class name="cn.vko.common.util.TestPinYinUtil"/>
+      <class name="cn.vko.common.util.TestRandomUtil"/>
+      <class name="cn.vko.common.util.TestRecordUtil"/>
+      <class name="cn.vko.common.util.TestReflectionUtil"/>
+      <class name="cn.vko.common.util.TestStringUtil"/>
+      <class name="cn.vko.common.util.TestUnitTestUtil"/>
+      <class name="cn.vko.common.util.TestUtil"/>
+    </classes>
+  </test>
+</suite>

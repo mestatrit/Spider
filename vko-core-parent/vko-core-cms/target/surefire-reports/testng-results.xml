@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="159" started-at="2014-05-15T19:29:07Z" finished-at="2014-05-15T19:29:07Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="159" started-at="2014-05-15T19:29:07Z" finished-at="2014-05-15T19:29:07Z">
+      <class name="cn.vko.core.cms.TestCms">
+        <test-method status="PASS" signature="createCms()[pri:0, instance:cn.vko.core.cms.TestCms@69945ce]" name="createCms" is-config="true" duration-ms="79" started-at="2014-05-15T19:29:07Z" finished-at="2014-05-15T19:29:07Z">
+        </test-method>
+        <test-method status="PASS" signature="testParse()[pri:0, instance:cn.vko.core.cms.TestCms@69945ce]" name="testParse" duration-ms="70" started-at="2014-05-15T19:29:07Z" finished-at="2014-05-15T19:29:07Z">
+        </test-method>
+        <test-method status="PASS" signature="testRegex()[pri:0, instance:cn.vko.core.cms.TestCms@69945ce]" name="testRegex" duration-ms="0" started-at="2014-05-15T19:29:07Z" finished-at="2014-05-15T19:29:07Z">
+        </test-method>
+        <test-method status="PASS" signature="createCms()[pri:0, instance:cn.vko.core.cms.TestCms@69945ce]" name="createCms" is-config="true" duration-ms="0" started-at="2014-05-15T19:29:07Z" finished-at="2014-05-15T19:29:07Z">
+        </test-method>
+      </class>
+      <class name="cn.vko.core.cms.TestParseUtil">
+        <test-method status="PASS" signature="testGetProps()[pri:0, instance:cn.vko.core.cms.TestParseUtil@6766afb3]" name="testGetProps" duration-ms="1" started-at="2014-05-15T19:29:07Z" finished-at="2014-05-15T19:29:07Z">
+        </test-method>
+      </class>
+    </test>
+  </suite>
+</testng-results>
