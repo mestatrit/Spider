@@ -50,14 +50,6 @@ public class Main {
 				thread = 100;
 			}
 		}
-		// String select = "select solution from spider_exam_jym_424";
-		// ImgDownloader imgDownloader = new ImgDownloader(dao);
-		// try {
-		// imgDownloader.download("/usr/tikuspider/imgs424", select);
-		// } catch (URISyntaxException e) {
-		// // TODO Auto-generated catch block
-		// e.printStackTrace();
-		// }
 		MultiWork work = null;
 		if ("j".equals(type)) {
 			work = new JYWork(thread, s, p);
@@ -101,30 +93,5 @@ public class Main {
 			}
 		}
 		work.run();
-		/*
-		 * // 并行数据清洗 final JyeooTransfer jyeooTransfer = new JyeooTransfer(dao);
-		 * final ImgDownloader imgDownloader = new ImgDownloader(dao);
-		 * ExecutorService ex = ThreadUtils.newFixedThreadPool(2); final
-		 * AtomicInteger i = new AtomicInteger(0); ex.execute(new Runnable() {
-		 * 
-		 * @Override public void run() {
-		 * 
-		 * try { String selectsql = getSelectSql(i.get()); i.getAndIncrement();
-		 * if (Util.isEmpty(selectsql)) { try { jyeooTransfer.transferData(); }
-		 * catch (Exception e) { e.printStackTrace(); } } else {
-		 * imgDownloader.download("d:\\dealImage/417imgs", selectsql); }
-		 * 
-		 * } catch (URISyntaxException e) { e.printStackTrace(); }
-		 * 
-		 * } });
-		 */
-
 	}
-
-	/*
-	 * private static String getSelectSql(int i) { if (i == 2) { return null; }
-	 * String[] sqls = new String[] {
-	 * "select solution from spider_exam_jym_420",
-	 * "select content from spider_exam_jym_420" }; return sqls[i]; }
-	 */
 }
