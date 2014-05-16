@@ -38,7 +38,6 @@ public class Main {
 				"updatepl");
 		RedisFilterScheduler rs = ioc.get(RedisFilterScheduler.class,
 				"rejectsc");
-
 		String type = "j";
 		int thread = 100;
 		if (args.length == 1) {
