@@ -52,7 +52,6 @@ public class Main {
 		MultiWork work = null;
 		if ("j".equals(type)) {
 			work = new JYWork(thread, s, p);
-			// work.setExitWhenComplete(false);
 		} else if ("jf".equals(type)) {
 			// 注意这个是特殊的 scheduler和pipeline
 			work = new JYFilterWork(thread, rs, p, dao);
